@@ -185,7 +185,7 @@ section .inner {
 
 h1{
   margin: 0;
-  margin-top: -240px;
+  margin-top: 50px;
   font-weight: normal;
   font-size: 3em;
   font-variant: small-caps;
@@ -198,7 +198,7 @@ h2{
 h3{
   margin: 0;
   font-weight: normal;
-  font-size: 2em;
+  font-size: 1em;
 }
 section .titolo{
 	padding-top:80px;
@@ -300,8 +300,47 @@ input[type=button]{
 	/*font-family:Arial;*/	
 }
 
+#intro {
+	text-align: justify;
+	word-spacing: -2px; 
+	line-height: 30px;
+	font-size:20px;
+	
+}
+
+ 
 body { 
 width:100%; 
 height:100%; 
 margin:0px; 
+}
+
+.showbutton {
+	display:block;margin:4px 0;
+	}
+	
+.nascondi {
+	overflow:hidden;background: blacktext-align: justify;
+	word-spacing: 1px; 
+	line-height: 40px;
+	font-size:20px;
+    margin: 50px;
+    padding: 50px;
+	text-align: justify;
+	word-spacing: 1px; 
+	line-height: 40px;
+	font-size:20px;
+	}
+	
+.nasondi > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}
+.showbutton[value="Mostra"] + .nascondi > div {margin-top:-100%;}
+.showbutton[value="Nascondi"] + .nascondi {padding:4px;}
+
+#bottone{
+	width:200px;
+	height:35px;
+	background-color: white;
+	font-size: 27px;
+	border: 2px solid;
+	border-radius: 50px 50px 50px 50px;
 }
