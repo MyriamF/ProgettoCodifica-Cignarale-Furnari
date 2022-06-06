@@ -49,13 +49,18 @@
                     <repository>Bibliothèque de Genève</repository>
                     <idno>BGE Ms. fr. 3951/1.2</idno>
                     <msName xml:lang="fr">Trois premières conférences à l'Université (cours d'ouverture, novembre 1891)</msName>
-                 </msIdentifier>
+                </msIdentifier>
+                </msDesc>
+              </listBibl>
+        </sourceDesc>
+
+
  
  
-  <text xml:lang="fr" xml:id="text-fr" subtype="manuscript"></text>
+  <text xml:lang="fr" xml:id="text-fr" subtype="manuscript">
     <body>
       <!-- inizio pagina 19 --> CONTROLLARE ABBR TYPE--> abbreviaton non prevista/sostituire con contraction ecc
-       <pb n="19" type="pageNum" place="top left" facs="#19">.</pb>  <!-- cambiare rif in facs --> 
+       <pb n="19" type="pageNum" place="top left" facs="#numero_pg19"/> 
            <div n="1" type="first_section" xml:id="R1_pg19">  
               <ab>
                 <lb facs="#R1_pg19"/>
@@ -71,10 +76,10 @@
                         
                 <lb facs= "#R3_pg19"/>
                   <seg><unclear reason="faded">vue de Histoire appliquée à la langue <pc force="strong">.</pc></unclear></seg>
-                  <seg>Presque im <pc force="inter">-</pc></pc></pc></seg>
+                  <seg>Presque im <pc force="inter">-</pc></seg>
                     
                 <lb facs= "#R4_pg19"/>
-                  <seg><pc force "inter">=</pc>médiatement se présentera la nécessité de</seg>
+                  <seg><pc force="inter">=</pc>médiatement se présentera la nécessité de</seg>
                   <seg><unclear reason= "faded">classer </unclear></seg>
                         
                 <lb facs= "#R5_pg19"/>
@@ -97,7 +102,7 @@
                   <seg> <unclear reason="faded"> elle se différencie</unclear></seg>
                          
                 <lb facs= "#R7_pg19"/>
-                  <seg><unclear reason="faded">ou se diversifie </seg>
+                  <seg><unclear reason="faded">ou se diversifie </unclear></seg>
                   <seg>dans l'espace<pc force="strong">.</pc></seg>
               </ab>
             </div>
@@ -126,7 +131,7 @@
                     <choice><sic>identiq<am>.</am></sic><expan>ue</expan></choice>
                     <seg> à elle <pc force= "weak">-</pc></seg>         
                     <!-- meme SEGNALARE CHE è SCRITTO DI MERDA  -->
-                    <segg> Les deux choses</segg> 
+                    <seg> Les deux choses</seg> 
                     <del rend="unreadable">
                     <gap reason="cancelled" quantity="1" unit="word"></gap></del>
                     <add resp= "editor"> <pc force = "weak">,</pc></add>
@@ -221,21 +226,21 @@
                     <lb facs= "#R27_pg19"/>
                       <seg>le principe qui </seg>
                       <seg><unclear reason="illegible"> en est</unclear></seg>
-                      <unclear reason="faded">la<choice>
-                      <sic>contre<pc force= "inter">-</pc>partie</sic><corr> contrepartie</corr></choice> 
+                      <unclear reason="faded">la</unclear>
+                      <sic>contre<pc force= "inter">-</pc>partie</sic><corr> contrepartie</corr> 
                       <pc force="weak">,</pc> 
                       <unclear reason="faded">celui de la</unclear>
-          inserire ref<term ref=""><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr> 
-                      <add place="under"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></choice></term>
-                      <unclear reason="illegible">dans le temps<pc force="strong">.</pc></unclear></add>
-                 </ab>
-                </div>
+          inserire ref<term ref=""><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr></choice> 
+                      <add place="under"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></term>
+                      <unclear reason="illegible">dans le temps<pc force="strong">.</pc></unclear>
+                 
+                
  
 
 
                              
-        <pb n="20" type="pageNum" place="top left" facs="#19">.</pb>  <!-- cambiare rif in facs --> 
-            <div n="1" type="first_section" xml:id="R1_pg19">  
+        <pb n="20" type="pageNum" place="top left" facs="#numero_pg20"/> 
+            <div n="1" type="first_section" xml:id="R1_pg20">  
               <ab>
                 <lb facs="#R1_pg20"/>
                   <seg>Puis<pc force="weak">,</pc> de même<pc force="weak">,</pc>nous considérerons </seg>
@@ -244,7 +249,7 @@
                                                     
                 <lb facs="#R2_pg20"/>
                   <seg> de la</seg>
-   aggiungere ref <term ref="" ><emph rend="underline">continuité</emph></term> // originale sottolineato, editoriale corsivo
+    aggiungere ref <term ref="" ><emph rend="underline">continuité</emph></term> // originale sottolineato, editoriale corsivo
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <seg>l'espace et</seg>
                   <add resp="author" place="above"><unclear reason="eccentric ductus">de</unclear></add>
@@ -259,7 +264,7 @@
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
                   <seg>l'espace</seg>
               </ab>
-            <ab>
+            </div
                                                       
                 <lb facs="#R4_pg20"/>
                   <seg>Après cet exposé qui aura l'avantage de nous</seg>
@@ -284,10 +289,10 @@
                     <choice><sic>+</sic><corr> plus</corr></choice>
                     <w>de</w>
                     <unclear reason="eccentric ductus"> sûreté</unclear> le
-                  </add>
+                  
                   <w>sujet</w>
                   <unclear reason="faded">spécial de la </unclear>
-                  <choice><abbr type="abbreviation">phonétiq<pc force="inter">.</pc></abbr><expan>phonétiq<ex>ue</ex></expa></choice>
+                  <choice><abbr type="abbreviation">phonétiq<pc force="inter">.</pc></abbr><expan>phonétiq<ex>ue</ex></expan></choice>
                   <w>du</w>
                   <unclear reason= "eccentric ductus">grec et</unclear>
                   <seg>du latin</seg>
@@ -300,13 +305,11 @@
                 <lb facs= "#R9_pg20"/>
                   <unclear reason="eccentric ductus">se présentent<del rend="unreadable">
                   <gap reason="cancelled" unit="word"> </gap>
-                  </del> sans cesse<<pc force="strong">.</pc>/unclear>
+                  </del> sans cesse <pc force="strong">.</pc></unclear>
              </ab>
             </div>
-
-
-
           </body>
+      </text>
 
           <facsimile> 
             <surface xml:id="facspage19"> <!--PAGINA 19-->
@@ -358,6 +361,6 @@
                 <zone ulx="555" uly="1081" lrx="2661" lry="1183" xml:id="R8_pg20"/>
                 <zone ulx="543" uly="1227" lrx="1807" lry="1305" xml:id="R9_pg20"/>
             </surface>
-              
+          </facsimile>     
 
             </TEI>
