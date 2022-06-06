@@ -279,7 +279,7 @@
                   <seg>des faits particuliers<pc force="weak">,</pc>>nous aborderons</seg>
                   <del rend="unreadable"><gap reason="cancelled" unit="chars"> </gap></del>
                                                       
-                <lb facs= "#R7_pg19"/>
+                <lb facs= "#R7_pg20"/>
                   <add place= "left">avec</add>
                     <choice><sic>+</sic><corr> plus</corr></choice>
                     <w>de</w>
@@ -292,12 +292,12 @@
                   <unclear reason= "eccentric ductus">grec et</unclear>
                   <seg>du latin</seg>
                                                      
-                <lb facs= "#R8_pg19"/>
+                <lb facs= "#R8_pg20"/>
                   <seg>où les occasions d'appliquer </seg>
                   <unclear reason="eccentric ductus">ces</unclear>
                   <seg>principes généraux</seg>
                                                      
-                <lb facs= "#R9_pg19"/>
+                <lb facs= "#R9_pg20"/>
                   <unclear reason="eccentric ductus">se présentent<del rend="unreadable">
                   <gap reason="cancelled" unit="word"> </gap>
                   </del> sans cesse<<pc force="strong">.</pc>/unclear>
@@ -307,5 +307,57 @@
 
 
           </body>
+
+          <facsimile> 
+            <surface xml:id="facspage19"> <!--PAGINA 19-->
+                <graphic url='pagina19.jpg' width='2764px' height='3629px'/>
+
+                <zone ulx="41" uly="4" lrx="332" lry="212" xml:id="numero_pg19"/>
+
+                <zone ulx="400" uly="117" lrx="2629" lry="237" xml:id="R1_pg19"/>
+                <zone ulx="280" uly="233" lrx="2632" lry="393" xml:id="R2_pg19"/>
+                <zone ulx="293" uly="431" lrx="2649" lry="525" xml:id="R3_pg19" />
+                <zone ulx="291" uly="565" lrx="2631" lry="649" xml:id="R4_pg19"/>
+                <zone ulx="333" uly="673" lrx="2651" lry="775" xml:id="R5_pg19"/>
+                <zone ulx="325" uly="821" lrx="2631" lry="927" xml:id="R6_pg19"/>
+                <zone ulx="363" uly="961" lrx="2609" lry="1045" xml:id="R7_pg19"/>
+                <zone ulx="357" uly="1087" lrx="2637" lry="1167" xml:id="R8_pg19"/>
+                <zone ulx="353" uly="1213" lrx="2565" lry="1297" xml:id="R9_pg19" />
+                <zone ulx="375" uly="1353" lrx="2649" lry="1431" xml:id="R10_pg19"/>
+                <zone ulx="5" uly="1489" lrx="2697" lry="1597" xml:id="R11_pg19"/>
+                <zone ulx="365" uly="1633" lrx="2679" lry="1695" xml:id="R12_pg19"/>
+                <zone ulx="307" uly="1735" lrx="2705" lry="1835" xml:id="R13_pg19"/>
+                <zone ulx="333" uly="1865" lrx="2427" lry="1957" xml:id="R14_pg19"/>
+                <zone ulx="685" uly="2017" lrx="2757" lry="2101" xml:id="R15_pg19"/>
+                <zone ulx="437" uly="2129" lrx="2687" lry="2253" xml:id="R16_pg19"/>
+                <zone ulx="379" uly="2301" lrx="2673" lry="2369" xml:id="R17_pg19"/>
+                <zone ulx="425" uly="2411" lrx="2647" lry="2497" xml:id="R18_pg19"/>
+                <zone ulx="469" uly="2541" lrx="1905" lry="2603" xml:id="R19_pg19"/>
+                <zone ulx="679" uly="2667" lrx="2699" lry="2745" xml:id="R20_pg19"/>
+                <zone ulx="437" uly="2771" lrx="2583" lry="2855" xml:id="R21_pg19"/>
+                <zone ulx="447" uly="2911" lrx="771" lry="3019" xml:id="R22_pg19"/>
+                <zone ulx="809" uly="2913" lrx="2695" lry="3243" xml:id="delSection_pg19"/>
+                <zone ulx="463" uly="3275" lrx="2731" lry="3373" xml:id="R25_pg19"/>
+                <zone ulx="489" uly="3415" lrx="2745" lry="3483" xml:id="R26_pg19" />
+                <zone ulx="501" uly="3519" lrx="2751" lry="3625" xml:id="R27_pg19" />
+            </surface>
+
+            <surface xml:id="facspage20"> <!--PAGINA 20-->
+                <graphic url='pagina20.jpg' width='2769px' height='3654px' />
+
+                <zone ulx="43" uly="31" lrx="369" lry="199" xml:id="numero_pg20"/>
+
+                <zone ulx="463" uly="47" lrx="2647" lry="271" xml:id="R1_pg20" />
+                <zone ulx="485" uly="295" lrx="2685" lry="383" xml:id="R2_pg20"/>
+                <zone ulx="459" uly="403" lrx="2733" lry="531" xml:id="R3_pg20"/>
+                <zone ulx="497" uly="581" lrx="2695" lry="667" xml:id="R4_pg20"/>
+                <zone ulx="471" uly="705" lrx="2637" lry="787" xml:id="R5_pg20"/>
+                <zone ulx="487" uly="843" lrx="2637" lry="929" xml:id="R6_pg20"/>
+                <zone ulx="15" uly="1001" lrx="515" lry="1101" xml:id="AddR7_pg20"/>
+                <zone ulx="553" uly="969" lrx="2601" lry="1027" xml:id="R7_pg20"/>
+                <zone ulx="555" uly="1081" lrx="2661" lry="1183" xml:id="R8_pg20"/>
+                <zone ulx="543" uly="1227" lrx="1807" lry="1305" xml:id="R9_pg20"/>
+            </surface>
+              
 
             </TEI>
