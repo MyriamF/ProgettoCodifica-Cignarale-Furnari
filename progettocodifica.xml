@@ -89,7 +89,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                 <lb facs= "#R2_pg19"/>
                   <w>près</w>
                   <add place="supralinear"><choice><abbr type="abbreviation">Mess</abbr><expan>Mess<ex>ieurs</ex></expan></choice></add>
-                  <seg> ce qui est contenu dans ce mot et</seg>
+                  <seg> ce qui est contenu dans ce
+                     <term ref="mot" > mot </tern> et</seg>
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <w>cette</w>
                         
@@ -150,16 +151,18 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                     <choice><sic>identiq<am>.</am></sic><expan>ue</expan></choice>
                     <seg> à elle <pc force= "weak">-</pc></seg>         
                     <!-- meme SEGNALARE CHE è SCRITTO DI MERDA  -->
-                    <seg> Les deux choses</seg> 
-                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"></gap></del>
-                    <add resp= "editor"><pc force = "weak">,</pc></add>
+                    <seg> Les deux choses</seg>
+                    <subst>
+                      <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"></gap></del>
+                      <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></add>
                     
-                  <lb facs= "#R11_pg19"/>
-                    <add place= "margin_left">lorsqu'on</add>
-                    <add place="supralinear">veut</add>
+                      <lb facs= "#R11_pg19"/>
+                        <add place= "margin_left">lorsqu'on</add>
+                        <add place="supralinear">veut</add>
+                    </subst>
                     <seg>avoir une vue exacte </seg>
                     <unclear reason="faded">des événements</unclear>
-                    <add resp= "editor"> <pc force = "weak">,</pc></add>
+                    <supplied reason="omitted_in_original" resp= "editor"> <pc force = "weak">,</pc></add>
                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                            
                   <lb facs= "#R12_pg19"/>
@@ -191,7 +194,9 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                     <seg>la marche</seg>
                     <unclear reason="eccentric_ductus">uniquement</unclear>
                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
-                    <add place= "supralinear">de la langue </add>
+                    <subst>
+                     <add place= "supralinear">de la langue </add>
+                    </subst>
                     <seg>dans le temps<pc force="weak">,</pc></seg>
                                       
                   <lb facs= "#R17_pg19"/>
