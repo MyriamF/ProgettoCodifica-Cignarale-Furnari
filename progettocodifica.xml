@@ -55,7 +55,8 @@
                     <summary>Il manoscritto del linguista francese <persName>Ferdinand de Saussure</persName> si compone di tre parti, ognuna delle quali denominata <title>“Prolusione ginevrina”</title>.
                        Il nome si riferisce alle lezioni relative al corso di <title>“Phonétique du grec et du latin”</title>, tenutesi presso l’<orgName><name type="role">Università</name>
                        di <name type="city">>Ginevra</name> il <date>6, 10 e 13 novembre 1891</date> , nel corso delle quali vennero presentati i temi delle  <title>Prolusioni</title>.
-                       Il manoscritto venne poi acquisito dalla <orgName><name type="role">Biblioteca</name> di <name type="city">Ginevra</name>.
+                       Il manoscritto venne poi acquisito dalla <orgName><name type="role">Biblioteca</name> di <name type="city">Ginevra</name> Ginevra ed è ora consultabile all'indirizzo.
+                        <ptr target= "https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef/dao/0/"/>.
 Edizione francese di riferimento: Bouquet-Engler 2002: pp. 143-172
  Engler 1967-74: 3283-3285.
 Traduzione italiana basata sull’edizione Bouquet-Engler (2002), con note di commento parziale in E. Fadda 2006: pp. 85-121.
@@ -82,12 +83,12 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
           
               <ab ="1" type="first_section" xml:id="R1_pg19">
                 <lb facs="#R1_pg19"/>
-                  <del rend="unreadable"><gap reason="cancelled" unit="chars"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
                   <seg>Serrons maintenant d'un peu plus</seg> 
                   
                 <lb facs= "#R2_pg19"/>
                   <w>près</w>
-                  <add place="above"><choice><abbr type="abbreviation">Mess</abbr><expan>Mess<ex>ieurs</ex></expan></choice></add>
+                  <add place="supralinear"><choice><abbr type="abbreviation">Mess</abbr><expan>Mess<ex>ieurs</ex></expan></choice></add>
                   <seg> ce qui est contenu dans ce mot et</seg>
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <w>cette</w>
@@ -109,8 +110,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
           
              
               <ab n="2" type="second_section" xml:id="R5_pg19"> 
-                <seg>La langue se différencie <del> 
-                <gap reason="illegible" quantity="1" unit="char"/></del></seg>
+                <seg>La langue se différencie</seg>
+                <del rend="unreadable" hand="author"><gap reason="illegible" quantity="1" extent="char"/></del>
                          
                 <lb facs= "#R6_pg19"/>
                   <seg>dans le temps <pc force="weak">,</pc></seg>
@@ -150,31 +151,30 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                     <seg> à elle <pc force= "weak">-</pc></seg>         
                     <!-- meme SEGNALARE CHE è SCRITTO DI MERDA  -->
                     <seg> Les deux choses</seg> 
-                    <del rend="unreadable">
-                    <gap reason="cancelled" quantity="1" unit="word"></gap></del>
-                    <add resp= "editor"> <pc force = "weak">,</pc></add>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"></gap></del>
+                    <add resp= "editor"><pc force = "weak">,</pc></add>
                     
                   <lb facs= "#R11_pg19"/>
-                    <add place= "left">lorsqu'on</add>
-                    <add place="above">veut</add>
+                    <add place= "margin_left">lorsqu'on</add>
+                    <add place="supralinear">veut</add>
                     <seg>avoir une vue exacte </seg>
                     <unclear reason="faded">des événements</unclear>
                     <add resp= "editor"> <pc force = "weak">,</pc></add>
-                    <del rend="unreadable"><gap reason="cancelled" unit="word"> </gap></del>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                            
                   <lb facs= "#R12_pg19"/>
-                    <gap reason="cancelled" unit="word"> </gap>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap>
                     <seg>doivent toujours être considé <pc force= "inter">=</pc></seg>
                              
                   <lb facs= "#R13_pg19"/>
                     <seg><pc force= "weak">=</pc>rées à la fois et de front<pc force="strong">.</pc></seg>
                     <seg>Mais nous sommes </seg>
-                    <add place= "above"><unclear reason= "faded">bien</unclear></add>
+                    <add place= "supralinear"><unclear reason= "faded">bien</unclear></add>
                     <sic>ob<pc force="inter">=</pc></sic>
                               
                   <lb facs= "#R14_pg19"/>
                     <seg><pc force= "weak">=</pc>ligés de les séparer<pc force="strong">.</pc></seg>
-                    <add place= "above"><unclear reason= "eccentric_ductus">en théorie </unclear></add> TRATTARE LE PAROLE SEPARATE COME CORR??--> cercare parole separate in altri documenti 
+                    <add place= "supralinear"><unclear reason= "eccentric_ductus">en théorie </unclear></add> TRATTARE LE PAROLE SEPARATE COME CORR??--> cercare parole separate in altri documenti 
                     <unclear reason= "faded">pour </unclear>
                     <seg>procéder avec ordre <pc force="strong">.</pc></seg>
                 </ab>
@@ -184,14 +184,14 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                 <ab n="4" type="fourth_section" xml:id="R15_pg19">
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
-                  <del rend="unreadable"><gap reason="cancelled" quantity="2" unit="chars"></gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="2" extent="chars"></gap></del>
                   <seg>pour aujourd'hui</seg>
                                      
                   <lb facs= "#R16_pg19"/>
                     <seg>la marche</seg>
                     <unclear reason="eccentric_ductus">uniquement</unclear>
-                    <del rend="unreadable"><gap reason="cancelled" quantity="3" unit="words"></gap></del>
-                    <add place= "above">de la langue </add>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
+                    <add place= "supralinear">de la langue </add>
                     <seg>dans le temps<pc force="weak">,</pc></seg>
                                       
                   <lb facs= "#R17_pg19"/>
@@ -201,9 +201,10 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                      
                   <lb facs= "#R18_pg19"/>
                     <seg>préoccuper du facteur de</seg>
+                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="4" extent="words"></gap></del>
                                       
                   <lb facs= "#R19_pg19"/>
-                    <del rend="unreadable"><gap reason="cancelled" quantity="7" unit="words"> </gap></del>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
                     <unclear reason="faded">la distance</unclear>
                     <choice><abbr type="suspension">géogr<am>.</am></abbr><expan>géogr<ex>aphique</ex></expan></choice>
                 </ab>
@@ -212,7 +213,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
               
                 <ab n="5" type="fifth_section" xml:id="R20_pg19">
                   <seg>Même il ne me sera possible</seg>
-                  <del rend="unreadable"><gap reason="cancelled" quantity="2" unit="words"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
                   <seg>d'aborder</seg>
                                          
                     <lb facs= "#R21_pg19"/>
@@ -221,14 +222,12 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                   
                     <lb facs= "#R22_pg19"/>  
                       <w>poser<pc force="strong">;</pc></w>
-                 </ab>
-              
-                                     
-              <delSpan spanTo="#delSection_pg19"></delSpan>
-                                      
-                    <lb facs= "#R25_pg19"/>  
-                      <del rend="unreadable"><gap reason="cancelled" unit="chars"></gap></del>
-                      <add resp="author" place="above">c<pc force="inter">'</pc></add>
+                      <delSpan spanTo="#deletedSection_pg19"></delSpan>
+                 
+                             
+                    <lb facs= "#R25_pg19"/>
+                      <anchor spanTo="deletedSection_pg19"/>  
+                      <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
                       <seg>est le principe de la</seg>
        aggiungere ref <term ref="" ><emph rend="underline">continuité</emph></term> // originale sottolineato, editoriale corsivo
                       <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
@@ -236,9 +235,9 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                                 
                     <lb facs= "#R26_pg19"/>    
                       <seg>dans notre</seg>
-                      <del rend="unreadable">
-                      <gap reason="cancelled" quantity="1" unit="words"> </gap></del>
-                      <seg> séance</seg><add resp="author" place="above">de mardi</add> 
+                      <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"> </gap></del>
+                      <w> séance</w>
+                      <add hand="author" place="supralinear">de mardi</add> 
                       <seg>nous aurons à examiner </seg>
                                                      
                     <lb facs= "#R27_pg19"/>
@@ -249,7 +248,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                       <pc force="weak">,</pc> 
                       <unclear reason="faded">celui de la</unclear>
           inserire ref<term ref=""><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr></choice> 
-                      <add place="under"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></term>
+                      <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></term>
                       <unclear reason="illegible">dans le temps<pc force="strong">.</pc></unclear>
                  
                 
@@ -262,7 +261,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
               <ab n="1" type="first_section" xml:id="R1_pg20">
                 <lb facs="#R1_pg20"/>
                   <seg>Puis<pc force="weak">,</pc> de même<pc force="weak">,</pc>nous considérerons </seg>
-                  <add resp="author" place="above"><unclear reason="eccentric ductus">ce qu'on peut dire du </unclear></add>
+                  <add hand="author" place="supralinear"><unclear reason="eccentric ductus">ce qu'on peut dire du </unclear></add>
                   <w>principe</w> 
                                                     
                 <lb facs="#R2_pg20"/>
@@ -270,14 +269,14 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
     aggiungere ref<term ref="" ><emph rend="underline">continuité</emph></term> // originale sottolineato, editoriale corsivo
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <seg>l'espace et</seg>
-                  <add resp="author" place="above"><unclear reason="eccentric ductus">de</unclear></add>
+                  <add hand="author" place="supralinear"><unclear reason="eccentric ductus">de</unclear></add>
                   <unclear reason= "faded">celui </unclear>
                   <unclear reason ="eccentric ductus">d</unclear>
                   <unclear reason="faded">la</unclear>
-                  <del rend="unreadable"><gap reason="cancelled" quantity="5" unit="chars"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="5" extent="chars"> </gap></del>
                                                     
                 <lb facs="#R3_pg20"/>
-                  <del rend="unreadable"><gap reason="cancelled" quantity="3" unit="words"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap></del>
    aggiungere ref <term ref="" ><emph rend="underline">divergence</emph></term> // originale sottolineato, editoriale corsivo
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
                   <seg>l'espace</seg>
@@ -293,14 +292,14 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <w>terrain</w>
                   <choice><unclear reason="eccentric ductus"><abbr type="suspension">parft</abbr> </unclear> 
                   <expan>parf<ex>ai</ex>t<ex>ement</ex></expan></choice>
-                  <del rend="unreadable"><gap reason="cancelled" unit="chars"></gap></del>
+                  <del rend="unreadable" hand= "author"><gap reason="cancelled" extent="chars"></gap></del>
                  <seg> net pour</seg>
                                                        
                 <lb facs="#R6_pg20"/>
                   <seg>l'étude</seg>
                   <unclear reason="eccentric ductus">des</unclear>
                   <seg>des faits particuliers<pc force="weak">,</pc>>nous aborderons</seg>
-                  <del rend="unreadable"><gap reason="cancelled" unit="chars"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
                                                       
                 <lb facs= "#R7_pg20"/>
                   <add place= "left">avec</add>
@@ -321,9 +320,9 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <seg>principes généraux</seg>
                                                      
                 <lb facs= "#R9_pg20"/>
-                  <unclear reason="eccentric ductus">se présentent<del rend="unreadable">
-                  <gap reason="cancelled" unit="word"> </gap>
-                  </del> sans cesse <pc force="strong">.</pc></unclear>
+                  <unclear reason="eccentric ductus">se présentent
+                   <del rend="unreadable" hand="author"><gap reason="cancelled" unit="word"> </gap></del>
+                   <seg> sans cesse <pc force="strong">.</pc></unclear></seg>
              </ab>
             </div>
           </body>
