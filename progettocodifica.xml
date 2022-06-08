@@ -90,12 +90,14 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <w>près</w>
                   <add place="supralinear"><choice><abbr type="abbreviation">Mess</abbr><expan>Mess<ex>ieurs</ex></expan></choice></add>
                   <seg> ce qui est contenu dans ce
-                     <term ref="mot" > mot </tern> et</seg>
+                  <term ref="mot" > mot </tern> et</seg>
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <w>cette</w>
                         
                 <lb facs= "#R3_pg19"/>
-                  <seg><unclear reason="faded">vue de Histoire appliquée à la langue <pc force="strong">.</pc></unclear></seg>
+                  <seg><unclear reason="faded">vue de </seg>
+                  <term ref= "historie">Histoire appliquée à la langue</term> 
+                    <pc force="strong">.</pc></unclear></seg>
                   <seg>Presque im <pc force="inter">-</pc></seg>
                     
                 <lb facs= "#R4_pg19"/>
@@ -103,7 +105,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <seg><unclear reason= "faded">classer </unclear></seg>
                         
                 <lb facs= "#R5_pg19"/>
-                  <seg>nos idées sous</seg> 
+                  <seg>nos <term ref="idées">idées</term> sous</seg> 
                   <choice><sic>2</sic><corr>deux</corr></choice>
                   <seg>chefs <pc force="strong">.</pc></seg>
               </ab>  
@@ -111,31 +113,31 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
           
              
               <ab n="2" type="second_section" xml:id="R5_pg19"> 
-                <seg>La langue se différencie</seg>
+                <seg>La <term ref="langue">langue</term>  se <term ref="differencie">différencie</term> </seg>
                 <del rend="unreadable" hand="author"><gap reason="illegible" quantity="1" extent="char"/></del>
                          
                 <lb facs= "#R6_pg19"/>
-                  <seg>dans le temps <pc force="weak">,</pc></seg>
+                  <seg>dans le <term ref="temps">temps</term> <pc force="weak">,</pc></seg>
                   <seg>et en </seg>
                   <w><unclear reason= "eccentric ductus">même</unclear></w>
                   <w>temps</w>
-                  <seg> <unclear reason="faded"> elle se différencie</unclear></seg>
+                  <seg> <unclear reason="faded"> elle se <term ref= "differencie">différencie</term></unclear></seg>
                          
                 <lb facs= "#R7_pg19"/>
-                  <seg><unclear reason="faded">ou se diversifie </unclear></seg>
-                  <seg>dans l'espace<pc force="strong">.</pc></seg>
+                  <seg><unclear reason="faded">ou se <term ref="diversifie">diversifie</term> </unclear></seg>
+                  <seg>dans l'<term ref="espace">espace</term><pc force="strong">.</pc></seg>
               </ab>
           
                   
             
               <ab n="3" type="third_section" xml:id="R7_pg19">
-                <seg>Une langue prise à </seg>
+                <seg>Une <term ref="langue">langue</term> prise à </seg>
                           
                 <lb facs= "#R8_pg19"/>
                   <choice><sic>2 </sic><corr> deux </corr></choice>
                   <w> dates </w>
                   <abbr>diff<am>.</am></abbr><expan><ex>érentes</ex></expan>
-                  <seg>n'est pas identique à elle<pc force="inter">-</pc>même<pc force="strong">.</pc></seg>
+                  <seg>n'est pas <term ref="identique">"identique</term> à elle<pc force="inter">-</pc>même<pc force="strong">.</pc></seg>
                   <seg>Prise sur</seg>
                             
                   <lb facs= "#R9_pg19"/>
@@ -188,16 +190,16 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="2" extent="chars"></gap></del>
-                  <seg>pour aujourd'hui</seg>
+                  <seg>pour <date when="10-11-1891">aujourd'hui</date></seg>
                                      
                   <lb facs= "#R16_pg19"/>
                     <seg>la marche</seg>
                     <unclear reason="eccentric_ductus">uniquement</unclear>
                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
                     <subst>
-                     <add place= "supralinear">de la langue </add>
+                     <add place= "supralinear">de la <term ref="lague">langue</term> </add>
                     </subst>
-                    <seg>dans le temps<pc force="weak">,</pc></seg>
+                    <seg>dans le <term ref="temps">temps</term><pc force="weak">,</pc></seg>
                                       
                   <lb facs= "#R17_pg19"/>
                     <unclear reason="faded">en supposant que nous n'ayons</unclear>
@@ -210,8 +212,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                       
                   <lb facs= "#R19_pg19"/>
                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
-                    <unclear reason="faded">la distance</unclear>
-                    <choice><abbr type="suspension">géogr<am>.</am></abbr><expan>géogr<ex>aphique</ex></expan></choice>
+                    <term ref="distance">unclear reason="faded">la distance</unclear>
+                    <choice><abbr type="suspension">géogr<am>.</am></abbr><expan>géogr<ex>aphique</ex></expan></choice></term>
                 </ab>
               
                                  
@@ -223,7 +225,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                          
                     <lb facs= "#R21_pg19"/>
                       <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan> </choice>
-                      <seg>dans cette séance que le premier point principal à</seg>
+                      <seg>dans cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
                                   
                     <lb facs= "#R22_pg19"/>  
                       <w>poser<pc force="strong">;</pc></w>
@@ -233,28 +235,28 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                     <lb facs= "#R25_pg19"/>
                       <anchor spanTo="deletedSection_pg19"/>  
                       <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
-                      <seg>est le principe de la</seg>
-       aggiungere ref <term ref="" ><emph rend="underline">continuité</emph></term> // originale sottolineato, editoriale corsivo
+                      <seg>est le <term ref="principe">principe</term> de la</seg>
+                      <term ref="continuité" ><emph> <hi rend="underline">continuité</hi></emph></term> 
                       <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
-                      <seg>le temps<pc>;</pc></seg>
+                      <seg>le <term ref="temps">temps</term><pc>;</pc></seg>
                                                 
                     <lb facs= "#R26_pg19"/>    
                       <seg>dans notre</seg>
                       <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"> </gap></del>
-                      <w> séance</w>
-                      <add hand="author" place="supralinear">de mardi</add> 
+                     <date when="13-10-1891"><w> séance</w>
+                      <add hand="author" place="supralinear">de mardi</add></date>
                       <seg>nous aurons à examiner </seg>
                                                      
                     <lb facs= "#R27_pg19"/>
                       <seg>le principe qui </seg>
                       <seg><unclear reason="illegible"> en est</unclear></seg>
                       <unclear reason="faded">la</unclear>
-                      <sic>contre<pc force= "inter">-</pc>partie</sic><corr> contrepartie</corr> 
+                      <sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr> 
                       <pc force="weak">,</pc> 
                       <unclear reason="faded">celui de la</unclear>
-          inserire ref<term ref=""><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr></choice> 
-                      <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></term>
-                      <unclear reason="illegible">dans le temps<pc force="strong">.</pc></unclear>
+                      <term ref="transformation"><emph><hi rend="underline"><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr></choice> 
+                      <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
+                      <unclear reason="illegible">dans le <term red="temps">temps</term><pc force="strong">.</pc></unclear>
                  
                 
  
