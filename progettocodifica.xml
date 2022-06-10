@@ -236,7 +236,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                       <anchor spanTo="deletedSection_pg19"/>  
                       <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
                       <seg>est le <term ref="principe">principe</term> de la</seg>
-                      <term ref="continuité" ><emph> <hi rend="underline">continuité</hi></emph></term> 
+                      <term ref="continuite" ><emph> <hi rend="underline">continuité</hi></emph></term> 
                       <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
                       <seg>le <term ref="tempsEspace">temps</term><pc>;</pc></seg>
                                                 
@@ -273,7 +273,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                                                     
                 <lb facs="#R2_pg20"/>
                   <seg> de la</seg>
-                  <term ref="continuité" ><emph><hi rend="underline">continuité</hi></emph></term> 
+                  <term ref="continuite" ><emph><hi rend="underline">continuité</hi></emph></term> 
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <seg>l'<term ref="espace"> espace</term> et</seg>
                   <add hand="author" place="supralinear"><unclear reason="eccentric ductus">de</unclear></add>
@@ -382,9 +382,15 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   </gloss>
                 </item>
                 <item>
-                  <term xml:id="identique"> Identité</term>
-                  <gloss target="#differencie">
-                   la costruzione linguistica dell'appartenenza ad uno o più gruppi o categorie sociali
+                  <term xml:id="distance"> Distance géographique</term>
+                  <gloss target="#distance">
+                   fattore che determina il cambiamento della lingua nello spazio
+                  </gloss>
+                </item>
+                <item>
+                  <term xml:id="continuite"> Continuité</term>
+                  <gloss target="#continuite">
+                   estensione non interrotta nel tempo e nello spazio
                   </gloss>
                 </item>
 
