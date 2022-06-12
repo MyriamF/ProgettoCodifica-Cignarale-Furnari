@@ -56,11 +56,11 @@
                        Il nome si riferisce alle lezioni relative al corso di <title>“Phonétique du grec et du latin”</title>, tenutesi presso l’<orgName><name type="role">Università</name></orgName>
                        di <name type="city">>Ginevra</name> il <date>6, 10 e 13 novembre 1891</date> , nel corso delle quali vennero presentati i temi delle  <title>Prolusioni</title>.
                        Il manoscritto venne poi acquisito dalla <orgName><name type="role">Biblioteca</name></orgName>orgName> di <name type="city">Ginevra</name> Ginevra ed è ora consultabile all'indirizzo.
-                        <ptr target= "https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef/dao/0/"/>.
-Edizione francese di riferimento: Bouquet-Engler 2002: pp. 143-172
- Engler 1967-74: 3283-3285.
-Traduzione italiana basata sull’edizione Bouquet-Engler (2002), con note di commento parziale in E. Fadda 2006: pp. 85-121.
-Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Ferdinand de Saussure 67, pp. 217-312.
+                       <ptr target= "https://archives.bge-geneve.ch/ark:/17786/vtae78f994bf3242bef/dao/0/"/>.
+                       Edizione francese di riferimento: Bouquet-Engler 2002: pp. 143-172
+                       Engler 1967-74: 3283-3285.
+                       Traduzione italiana basata sull’edizione Bouquet-Engler (2002), con note di commento parziale in E. Fadda 2006: pp. 85-121.
+                       Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Ferdinand de Saussure 67, pp. 217-312.
                     </summary>
                     <textLang mainLang="fr">Francese</textLang>
                     <msItem>
@@ -81,7 +81,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
         <div type="pg19">  
           <pb n="19" type="pageNum" place="top left" facs="#numero_pg19"/> 
           
-              <ab ="1" type="first_section" xml:id="R1_pg19">
+              <ab ="1" type="first_section" xml:id="Par1_pg19">
                 <lb facs="#R1_pg19"/>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
                   <seg>Serrons maintenant d'un peu plus</seg> 
@@ -112,7 +112,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
           
           
              
-              <ab n="2" type="second_section" xml:id="R5_pg19"> 
+              <ab n="2" type="second_section" xml:id="Par2_pg19"> 
+                <lb facs= "#R5_pg19"/>
                 <seg>La <term ref="#langue">langue</term>  se <term ref="#differenciation">différencie</term> </seg>
                 <del rend="unreadable" hand="author"><gap reason="illegible" quantity="1" extent="char"/></del>
                          
@@ -130,7 +131,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
           
                   
             
-              <ab n="3" type="third_section" xml:id="R7_pg19">
+              <ab n="3" type="third_section" xml:id="Par3_pg19">
+                <lb facs= "#R7_pg19"/>
                 <seg>Une <term ref="#langue">langue</term> prise à </seg>
                           
                 <lb facs= "#R8_pg19"/>
@@ -186,7 +188,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
               
                                 
               
-                <ab n="4" type="fourth_section" xml:id="R15_pg19">
+                <ab n="4" type="fourth_section" xml:id="Par4_pg19">
+                  <lb facs= "#R15_pg19"/>
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="2" extent="chars"></gap></del>
@@ -218,7 +221,8 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
               
                                  
               
-                <ab n="5" type="fifth_section" xml:id="R20_pg19">
+                <ab n="5" type="fifth_section" xml:id="Par5_pg19">
+                  <lb facs= "#R20_pg19"/>
                   <seg>Même il ne me sera possible</seg>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
                   <seg>d'aborder</seg>
@@ -265,7 +269,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
         <div type="pg20">                    
             <pb n="20" type="pageNum" place="top left" facs="#numero_pg20"/> 
             
-              <ab n="1" type="first_section" xml:id="R1_pg20">
+              <ab n="1" type="first_section" xml:id="Par1_pg20">
                 <lb facs="#R1_pg20"/>
                   <seg>Puis<pc force="weak">,</pc> de même<pc force="weak">,</pc>nous considérerons </seg>
                   <add hand="author" place="supralinear"><unclear reason="eccentric ductus">ce qu'on peut dire du </unclear></add>
@@ -289,7 +293,7 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <seg>l'<term rend="espace">espace</term></seg>
               </ab>
             
-              <ab n="2" type="second_section" xml:id="R4_pg20">                                       
+              <ab n="2" type="second_section" xml:id="Par2_pg20">                                       
                 <lb facs="#R4_pg20"/>
                   <seg>Après cet exposé qui aura l'avantage de nous</seg>
                                                       
@@ -302,24 +306,23 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                   <del rend="unreadable" hand= "author"><gap reason="cancelled" extent="chars"></gap></del>
                  <seg> net pour</seg>
                                                        
-                <lb facs="#R6_pg20"/>
+               <lb facs="#R6_pg20"/>
                   <seg>l'étude</seg>
                   <unclear reason="eccentric ductus">des</unclear>
                   <seg>des <term ref="#faitpartic">faits particuliers</term><pc force="weak">,</pc>>nous aborderons</seg>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
                                                       
-                <lb facs= "#R7_pg20"/>
+               <lb facs= "#R7_pg20"/>
                   <add place= "left">avec</add>
-                    <choice><sic>+</sic><corr> plus</corr></choice>
-                    <w>de</w>
-                    <unclear reason="eccentric ductus"> sûreté</unclear> le
-                  
-                  <w>sujet</w>
+                  <choice><sic>+</sic><corr> plus</corr></choice>
+                  <w>de</w>
+                  <unclear reason="eccentric ductus"> sûreté</unclear> 
+                  <seg> le sujet</seg>
                   <unclear reason="faded">spécial de la </unclear>
                   <choice><term ref="#phonetique"><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></term></choice>
                   <seg> du <unclear reason= "eccentric ductus">grec et</unclear>du latin</seg>
                                                      
-                <lb facs= "#R8_pg20"/>
+              <lb facs= "#R8_pg20"/>
                   <seg>où les occasions d'appliquer </seg>
                   <unclear reason="eccentric ductus">ces</unclear>
                   <term ref= "#principe">principes généraux</term>
@@ -330,16 +333,32 @@ Studi critici: AA.VV., 2009, «Sur Saussure à Genève en 1891», in Cahiers Fer
                    <seg> sans cesse <pc force="strong">.</pc></unclear></seg>
              </ab>
             </div>
-             <div xml:lang="it" type="translation" corresp="">
-                    <p>
-                        Non ho bisogno di dirvi che,
-                        se in quest'esposizione si prendessero due fotografie 
-                        contigue qualsiasi sulla parete, si avrebbe 
-                        lo stesso Boguslawski, ma se 
-                        si prendessero la n° 480 e la n° 1 si
-                        avrebbero due Boguslawski.
-                    </p>
-                </div>
+             
+            <div xml:lang="it" type="traduzione" n="1">
+              <ab corresp="#Par1_pg19">
+                Stringiamo ora un po’ più vicino, Signori, ciò che è contenuto in questa parola e in questa visione della Storia applicata alla lingua. Quasi subito si presenterà la necessità di classificare le nostre idee sotto due polarità.
+              </ab>
+              <ab corresp="#Par2_pg19">
+                La lingua si differenzia nel tempo, e allo stesso tempo si differenzia o si diversifica nello spazio.
+              </ab>
+              <ab corresp="#Par3_pg19">
+                Una lingua presa in due date differenti non è identica a se stessa. Presa in due punti più o meno distanti del suo territorio, nemmeno in tal caso è identica a se stessa. Le due cose, se si voglia avere una visione esatta dei fatti, vanno considerate insieme e frontalmente. Ma noi siamo obbligati a separarle nella teoria per procedere con ordine.
+              </ab>
+              <ab corresp="#Par4_pg19">
+                Dunque, per oggi, considererò unicamente il cammino della lingua nel tempo, supponendo che non abbiamo da preoccuparci in nessun modo del fattore della distanza geografica.
+              </ab>
+              <ab corresp="#Par5_pg20">
+                Anzi, non mi sarà possibile abbordare in questa seduta che il primo punto principale da porre; è il principio della continuità nel tempo; nella nostra seduta di martedì dovremo esaminare il principio che ne è la contropartita, quello della trasformazione nel tempo.
+              </ab>
+            </div>
+
+            <div xml:lang="it" type="traduzione" n="1">
+              <ab corresp="#Par1_pg20">
+                Poi, allo stesso modo, considereremo ciò che si può dire del principio della continuità nello spazio e quello della divergenza nello spazio.
+              </ab>
+              <ab corresp="#Par2_pg20">
+              Dopo tale esposizione che avrà il vantaggio di porci su un terreno perfettamente sgombro per lo studio dei fatti particolari, abborderemo con più sicurezza l’argomento speciale della fonetica del greco e del latino, in cui le occasioni di applicare tali principi generali si presentano di continuo.
+              </ab>
             </div>
 
             <div xml:id="glossary">              <!--Glossario -->
