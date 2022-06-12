@@ -100,7 +100,7 @@
                     <pc force="strong">.</pc></unclear></seg>
                   <seg>Presque im <pc force="inter">-</pc></seg>
                     
-                <lb facs= "#R4_pg19"/>
+                <lb facs= "#R4_pg19" break="no" rend="double stroke"/>
                   <seg><pc force="inter">=</pc>médiatement se présentera la nécessité de</seg>
                   <seg><unclear reason= "faded">classer </unclear></seg>
                         
@@ -157,29 +157,29 @@
                     <!-- meme SEGNALARE CHE è SCRITTO DI MERDA  -->
                     <seg> Les deux choses</seg>
                     <subst>
-                      <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"></gap></del>
-                      <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></add>
+                    <del rend="overstrike" hand="author">pour<gap reason="cancelled" quantity="1" extent="word"></gap></del>
+                    <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></add>
                     
-                      <lb facs= "#R11_pg19"/>
-                        <add place= "margin_left">lorsqu'on</add>
-                        <add place="supralinear">veut</add>
+                  <lb facs= "#R11_pg19"/>
+                    <add place= "margin_left">lorsqu'on</add>
+                    <add place="supralinear">veut</add>
                     </subst>
                     <seg>avoir une vue exacte </seg>
                     <unclear reason="faded">des événements</unclear>
                     <supplied reason="omitted_in_original" resp= "editor"> <pc force = "weak">,</pc></add>
-                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap></del>
+                    <del rend="overstrike" hand="author">ne pouvent jamais<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                            
                   <lb facs= "#R12_pg19"/>
-                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap>
+                    <del rend="overstrike" hand="author">être sèparés<pc force="weak">,</pc> mais<gap reason="cancelled" quantity="3" extent="words"> </gap>
                     <seg>doivent toujours être considé <pc force= "inter">=</pc></seg>
                              
-                  <lb facs= "#R13_pg19"/>
+                  <lb facs= "#R13_pg19"  break="no" rend="double stroke"/>/>
                     <seg><pc force= "weak">=</pc>rées à la fois et de front<pc force="strong">.</pc></seg>
                     <seg>Mais nous sommes </seg>
                     <add place= "supralinear"><unclear reason= "faded">bien</unclear></add>
                     <sic>ob<pc force="inter">=</pc></sic>
                               
-                  <lb facs= "#R14_pg19"/>
+                  <lb facs= "#R14_pg19" break="no" rend="double stroke"/>
                     <seg><pc force= "weak">=</pc>ligés de les séparer<pc force="strong">.</pc></seg>
                     <add place= "supralinear"><unclear reason= "eccentric_ductus">en théorie </unclear></add> TRATTARE LE PAROLE SEPARATE COME CORR??--> cercare parole separate in altri documenti 
                     <unclear reason= "faded">pour </unclear>
@@ -192,13 +192,12 @@
                   <lb facs= "#R15_pg19"/>
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="2" extent="chars"></gap></del>
+                  <del rend="overstrike" hand="author">auj<gap reason="cancelled" quantity="2" extent="chars"></gap></del>
                   <seg>pour <date when="10-11-1891">aujourd'hui</date></seg>
                                      
                   <lb facs= "#R16_pg19"/>
                     <seg>la marche</seg>
-                    <unclear reason="eccentric_ductus">uniquement</unclear>
-                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
+                    <del rend="overstrike" hand="author">du langage<gap reason="cancelled" quantity="3" extent="words"></gap></del>
                     <subst>
                      <add place= "supralinear">de la <term ref="#lague">langue</term> </add>
                     </subst>
@@ -223,44 +222,46 @@
               
                 <ab n="5" type="fifth_section" xml:id="Par5_pg19">
                   <lb facs= "#R20_pg19"/>
-                  <seg>Même il ne me sera possible</seg>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
-                  <seg>d'aborder</seg>
-                                         
-                    <lb facs= "#R21_pg19"/>
-                      <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan> </choice>
-                      <seg>dans cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
+                   <seg>Même il ne me sera possible</seg>
+                   <del rend="overstrike" hand="author"> de po<gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
+                   <seg>d'aborder</seg>
+                                          
+                  <lb facs= "#R21_pg19"/>
+                   <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan> </choice>
+                    <seg>dans cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
                                   
-                    <lb facs= "#R22_pg19"/>  
-                      <w>poser<pc force="strong">;</pc></w>
-                      <delSpan spanTo="#deletedSection_pg19"></delSpan>
-                 
+                  <lb facs= "#R22_pg19"/>  
+                   <w>poser<pc force="strong">;</pc></w>
+                    <delSpan rend="overstrike" spanTo="#deletedSection_pg19"/>
+                    <ab facs="#delSection_pg19">
+                    Nous étudierons dans notre prochain séance le fait de la transformation le fait que nous etudions
+                    </ab>
                              
-                    <lb facs= "#R25_pg19"/>
-                      <anchor spanTo="deletedSection_pg19"/>  
-                      <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
-                      <seg>est le <term ref="#principe">principe</term> de la</seg>
-                      <term ref="#continuite" ><emph> <hi rend="underline">continuité</hi></emph></term> 
-                      <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
-                      <seg>le <term ref="#tempsEspace">temps</term><pc>;</pc></seg>
+                  <lb facs= "#R25_pg19"/>
+                   <anchor xmlid="deletedSection_pg19"/>  
+                   <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
+                   <seg>est le <term ref="#principe">principe</term> de la</seg>
+                   <term ref="#continuite" ><emph> <hi rend="underline">continuité</hi></emph></term> 
+                   <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
+                   <seg>le <term ref="#tempsEspace">temps</term><pc>;</pc></seg>
                                                 
-                    <lb facs= "#R26_pg19"/>    
-                      <seg>dans notre</seg>
-                      <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"> </gap></del>
-                     <date when="13-10-1891"><w> séance</w>
-                      <add hand="author" place="supralinear">de mardi</add></date>
-                      <seg>nous aurons à examiner </seg>
+                  <lb facs= "#R26_pg19"/>    
+                    <seg>dans notre</seg>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"> </gap></del>
+                    <date when="13-10-1891"><w> séance</w>
+                    <add hand="author" place="supralinear">de mardi</add></date>
+                    <seg>nous aurons à examiner </seg>
                                                      
-                    <lb facs= "#R27_pg19"/>
-                      <seg>le principe qui </seg>
-                      <seg><unclear reason="illegible"> en est</unclear></seg>
-                      <unclear reason="faded">la</unclear>
-                      <sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr> 
-                      <pc force="weak">,</pc> 
-                      <unclear reason="faded">celui de la</unclear>
-                      <term ref="#transformation"><emph><hi rend="underline"><choice><abbr type="abbreviation">trans<pc force="inter">-</pc></abbr></choice> 
-                      <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
-                      <unclear reason="illegible">dans le <term red="tempsEspace">temps</term><pc force="strong">.</pc></unclear>
+                  <lb facs= "#R27_pg19"/>
+                    <seg>le principe qui </seg>
+                    <seg><unclear reason="illegible"> en est</unclear></seg>
+                     <unclear reason="faded">la</unclear>
+                    <sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr> 
+                     <pc force="weak">,</pc> 
+                    <unclear reason="faded">celui de la</unclear>
+                    <term ref="#transformation"><emph><hi rend="underline"><choice><abbr type="abbreviation">trans</abbr></choice> 
+                    <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
+                    <unclear reason="illegible">dans le <term red="tempsEspace">temps</term><pc force="strong">.</pc></unclear>
                  
                 
  
