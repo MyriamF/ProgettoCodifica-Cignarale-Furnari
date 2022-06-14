@@ -277,6 +277,7 @@
               <ab n="1" type="first_section" xml:id="Par1_pg20">
                 <lb facs="#R1_pg20"/>
                   <seg>Puis<pc force="weak">,</pc> de même<pc force="weak">,</pc>nous considérerons </seg>
+                  <del rend="overstrike" hand="author">le<gap reason="cancelled" quantity="1" extent="word"></gap></del>
                   <add hand="author" place="supralinear"><unclear reason="eccentric ductus">ce qu'on peut dire du </unclear></add>
                   <term ref="#principe">principe</term>
                                                     
@@ -306,26 +307,25 @@
                   <seg>placer sur</seg>
                   <choice><abbr type="brevigraph">1</abbr><expan>un</expan></choice>
                   <w>terrain</w>
-                  <choice><sic>parftt</sic> 
-                  <corr>parfaitement</corr></choice>
+                  <choice><sic>parftt</sic><corr>parfaitement</corr></choice>
                   <del rend="unreadable" hand= "author"><gap reason="cancelled" extent="chars"></gap></del>
-                 <seg> net pour</seg>
+                  <seg> net pour</seg>
                                                        
                <lb facs="#R6_pg20"/>
                   <seg>l'étude</seg>
                   <unclear reason="eccentric ductus">des</unclear>
                   <seg>des <term ref="#faitpartic">faits particuliers</term><pc force="weak">,</pc>>nous aborderons</seg>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
+                  <del rend="overstrike" hand="author">le<gap reason="cancelled" extent="chars"> </gap></del>
                                                       
                <lb facs= "#R7_pg20"/>
-                  <add place= "left">avec</add>
-                  <choice><sic>+</sic><corr> plus</corr></choice>
-                  <w>de</w>
-                  <unclear reason="eccentric ductus"> sûreté</unclear> 
-                  <seg> le sujet</seg>
+                  <add place= "left">avec
+                    <choice><abbr type="brevigraph">+</abbr><expan>plus</expan></choice>
+                    <w>de</w>
+                   <unclear reason="eccentric ductus"> sûreté</unclear></add>
+                  <w> sujet</w>
                   <unclear reason="faded">spécial de la </unclear>
                   <term ref="#phonetique"><choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></choice></term>
-                  <seg> du <unclear reason= "eccentric ductus">grec et</unclear>du latin</seg>
+                  <seg> du grec <unclear reason= "eccentric ductus">et</unclear>du latin</seg>
                                                      
               <lb facs= "#R8_pg20"/>
                   <seg>où les occasions d'appliquer </seg>
