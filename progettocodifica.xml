@@ -71,17 +71,18 @@
                 </msDesc>
               </listBibl>
         </sourceDesc>
+      </fileDesc>
       </teiHeader>
  
  
   <text xml:lang="fr" xml:id="text-fr" subtype="manuscript">
     
      <body>
-      <!-- inizio pagina 19 --> CONTROLLARE ABBR TYPE--> abbreviaton non prevista/sostituire con contraction ecc
-        <div type="pg19">  
-          <pb n="19" type="pageNum" place="top left" facs="#numero_pg19"/> 
+      
+    <div type="pg19">  <!-- inizio pagina 19 --> 
+          <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19"/> 
           
-              <ab ="1" type="first_section" xml:id="Par1_pg19">
+              <ab n="1" type="first_section" xml:id="Par1_pg19">
                 <lb facs="#R1_pg19"/>
                   <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
                   <seg>Serrons maintenant d'un peu plus</seg> 
@@ -89,40 +90,41 @@
                 <lb facs= "#R2_pg19"/>
                   <w>près</w>
                   <add place="supralinear"><choice><abbr type="abbreviation">Mess</abbr><expan>Mess<ex>ieurs</ex></expan></choice></add>
-                  <seg> ce qui est contenu dans ce
-                  <term ref="#mot" > mot </tern> et</seg>
-                  <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
+                  <seg> ce qui est contenu dans ce</seg>
+                  <term ref="#mot" > mot </term> 
+                  <w>et</w>
+                  <choice><abbr type="brevighraph">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                   <w>cette</w>
                         
                 <lb facs= "#R3_pg19"/>
-                  <seg><unclear reason="faded">vue de </seg>
+                  <unclear reason="faded">vue de </unclear>
                   <term ref= "#historie">Histoire appliquée à la langue</term> 
-                    <pc force="strong">.</pc></unclear></seg>
+                  <pc force="strong">.</pc>
                   <seg>Presque im <pc force="inter">-</pc></seg>
                     
                 <lb facs= "#R4_pg19" break="no" rend="double stroke"/>
                   <seg><pc force="inter">=</pc>médiatement se présentera la nécessité de</seg>
-                  <seg><unclear reason= "faded">classer </unclear></seg>
+                  <unclear reason= "faded">classer </unclear>
                         
                 <lb facs= "#R5_pg19"/>
                   <seg>nos <term ref="#idées">idées</term> sous</seg> 
-                  <choice><sic>2</sic><corr>deux</corr></choice>
-                  <seg>chefs <pc force="strong">.</pc></seg>
+                  <choice><abbr type="brevigraph">2</abbr><expan>deux</expan></choice>
+                  <w>chefs</w> <pc force="strong">.</pc>
               </ab>  
           
           
              
               <ab n="2" type="second_section" xml:id="Par2_pg19"> 
                 <lb facs= "#R5_pg19"/>
-                <seg>La <term ref="#langue">langue</term>  se <term ref="#differenciation">différencie</term> </seg>
+                <seg>La <term ref="#langue">langue</term> se<term ref="#differenciation">différencie</term> </seg>
                 <del rend="unreadable" hand="author"><gap reason="illegible" quantity="1" extent="char"/></del>
                          
                 <lb facs= "#R6_pg19"/>
                   <seg>dans le <term ref="#tempsEsace">temps</term> <pc force="weak">,</pc></seg>
                   <seg>et en </seg>
-                  <w><unclear reason= "eccentric ductus">même</unclear></w>
+                  <choice><abbr type="brevigraph">m^</abbr><expan>même</expan></choice>
                   <w>temps</w>
-                  <seg> <unclear reason="faded"> elle se <term ref= "differenciation">différencie</term></unclear></seg>
+                  <unclear reason="faded"> elle se <term ref= "differenciation">différencie</term></unclear>
                          
                 <lb facs= "#R7_pg19"/>
                   <seg><unclear reason="faded">ou se <term ref="differenciation">diversifie</term> </unclear></seg>
@@ -136,59 +138,62 @@
                 <seg>Une <term ref="#langue">langue</term> prise à </seg>
                           
                 <lb facs= "#R8_pg19"/>
-                  <choice><sic>2 </sic><corr> deux </corr></choice>
+                  <choice><abbr type="brevigraph">2 </abbr><expan> deux </expan></choice>
                   <w> dates </w>
-                  <abbr>diff<am>.</am></abbr><expan><ex>érentes</ex></expan>
-                  <seg>n'est pas <term ref="#identique">identique</term> à elle<pc force="inter">-</pc>même<pc force="strong">.</pc></seg>
+                  <abbr>diff<am>.</am></abbr><expan>diff<ex>érentes</ex></expan>
+                  <seg>n'est pas <term ref="#identique">identique</term> à elle<pc force="inter">-</pc>
+                  <choice><sic>mêm</sic><corr>même</corr></choice>
+                  <pc force="strong">.</pc></seg>
                   <seg>Prise sur</seg>
                             
                   <lb facs= "#R9_pg19"/>
-                    <choice><sic>2 </sic><corr>deux </corr></choice>
-                    <seg>points</seg>
-                    <choice><sic>±</sic><corr> plus ou moins</corr></choice>
+                    <choice><abbr type="brevigraph">2 </abbr><expan>deux </expan></choice>
+                    <w>points</w>
+                    <choice><abbr type="brevigraph">±</abbr><expan> plus ou moins</expan></choice>
                     <unclear reason="faded">distants de son </unclear>
                     <seg>territoire <pc force= "weak">,</pc>elle </seg>
                     
                   <lb facs= "#R10_pg19"/>
                     <seg>n'est pas non</seg>
-                    <choice><sic>+</sic><corr> plus</corr></choice>
-                    <choice><sic>identiq<am>.</am></sic><expan>ue</expan></choice>
+                    <choice><abbr type="brevigraph">+</abbr><expan> plus</expan></choice>
+                    <choice><abbr type="abbreviation">identiq<am>.</am></abbr><expan>identiqu<ex>ue</ex></expan></choice>
                     <seg> à elle <pc force= "weak">-</pc></seg>         
-                    <!-- meme SEGNALARE CHE è SCRITTO DI MERDA  -->
+                    <choice><abbr type= "brevigraph">m^</abbr><expan>même</expan></choice><expan>même</expan>
                     <seg> Les deux choses</seg>
+                    <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></supplied>
                     <subst>
                     <del rend="overstrike" hand="author">pour<gap reason="cancelled" quantity="1" extent="word"></gap></del>
-                    <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></add>
+                   
                     
                   <lb facs= "#R11_pg19"/>
                     <add place= "margin_left">lorsqu'on</add>
-                    <add place="supralinear">veut</add>
+                    <add place="supralinear"><unclear reason="eccentric ductus">veut</unclear></add>
                     </subst>
                     <seg>avoir une vue exacte </seg>
                     <unclear reason="faded">des événements</unclear>
-                    <supplied reason="omitted_in_original" resp= "editor"> <pc force = "weak">,</pc></add>
+                    <supplied reason="omitted_in_original" resp= "editor"> <pc force = "weak">,</pc></supplied>
                     <del rend="overstrike" hand="author">ne pouvent jamais<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                            
                   <lb facs= "#R12_pg19"/>
-                    <del rend="overstrike" hand="author">être sèparés<pc force="weak">,</pc> mais<gap reason="cancelled" quantity="3" extent="words"> </gap>
+                    <del rend="overstrike" hand="author">être sèparés<pc force="weak">,</pc> mais<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                     <seg>doivent toujours être considé <pc force= "inter">=</pc></seg>
                              
                   <lb facs= "#R13_pg19"  break="no" rend="double stroke"/>/>
-                    <seg><pc force= "weak">=</pc>rées à la fois et de front<pc force="strong">.</pc></seg>
+                    <seg><pc force= "weak">=</pc>rées à la fois <unclear reason="eccentric ductus">et</unclear> de front<pc force="strong">.</pc></seg>
                     <seg>Mais nous sommes </seg>
                     <add place= "supralinear"><unclear reason= "faded">bien</unclear></add>
                     <sic>ob<pc force="inter">=</pc></sic>
                               
                   <lb facs= "#R14_pg19" break="no" rend="double stroke"/>
-                    <seg><pc force= "weak">=</pc>ligés de les séparer<pc force="strong">.</pc></seg>
-                    <add place= "supralinear"><unclear reason= "eccentric_ductus">en théorie </unclear></add> TRATTARE LE PAROLE SEPARATE COME CORR??--> cercare parole separate in altri documenti 
+                    <seg><pc force= "weak">=</pc>ligés de les séparer</seg>
+                    <add place= "supralinear"><unclear reason= "eccentric_ductus">en théorie </unclear></add> 
                     <unclear reason= "faded">pour </unclear>
                     <seg>procéder avec ordre <pc force="strong">.</pc></seg>
-                </ab>
+              </ab>
               
                                 
               
-                <ab n="4" type="fourth_section" xml:id="Par4_pg19">
+              <ab n="4" type="fourth_section" xml:id="Par4_pg19">
                   <lb facs= "#R15_pg19"/>
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
@@ -214,61 +219,60 @@
                                       
                   <lb facs= "#R19_pg19"/>
                     <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"></gap></del>
-                    <term ref="#distance">unclear reason="faded">la distance</unclear>
-                    <choice><abbr type="suspension">géogr<am>.</am></abbr><expan>géogr<ex>aphique</ex></expan></choice></term>
-                </ab>
+                    <term ref="#distance"><unclear reason="faded">la distance</unclear>
+                    <choice><abbr type="abbreviation">géogr<am>.</am></abbr><expan>géogr<ex>aphique</ex></expan></choice></term>
+            </ab>
               
                                  
               
-                <ab n="5" type="fifth_section" xml:id="Par5_pg19">
+              <ab n="5" type="fifth_section" xml:id="Par5_pg19">
                   <lb facs= "#R20_pg19"/>
                    <seg>Même il ne me sera possible</seg>
                    <del rend="overstrike" hand="author"> de po<gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
                    <seg>d'aborder</seg>
                                           
                   <lb facs= "#R21_pg19"/>
-                   <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan> </choice>
+                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
                     <seg>dans cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
                                   
                   <lb facs= "#R22_pg19"/>  
-                   <w>poser<pc force="strong">;</pc></w>
+                    <seg>poser<pc force="strong">;</pc></seg>
                     <delSpan rend="overstrike" spanTo="#deletedSection_pg19"/>
-                    <ab facs="#delSection_pg19">
+                    <phr facs="#delSection_pg19">
                     Nous étudierons dans notre prochain séance le fait de la transformation le fait que nous etudions
-                    </ab>
+                    </phr>
                              
                   <lb facs= "#R25_pg19"/>
-                   <anchor xmlid="deletedSection_pg19"/>  
+                   <anchor xml:id="deletedSection_pg19"/>  
                    <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
                    <seg>est le <term ref="#principe">principe</term> de la</seg>
                    <term ref="#continuite" ><emph> <hi rend="underline">continuité</hi></emph></term> 
-                   <choice><abbr type="suspension">d</abbr><expan>d<ex>ans</ex></expan></choice>
+                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
                    <seg>le <term ref="#tempsEspace">temps</term><pc>;</pc></seg>
                                                 
                   <lb facs= "#R26_pg19"/>    
                     <seg>dans notre</seg>
-                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="1" extent="word"> </gap></del>
+                    <del rend="overstrike" hand="author">prochain<gap reason="cancelled" quantity="1" extent="word"> </gap></del>
                     <date when="13-10-1891"><w> séance</w>
                     <add hand="author" place="supralinear">de mardi</add></date>
                     <seg>nous aurons à examiner </seg>
                                                      
                   <lb facs= "#R27_pg19"/>
                     <seg>le principe qui </seg>
-                    <seg><unclear reason="illegible"> en est</unclear></seg>
-                     <unclear reason="faded">la</unclear>
-                    <sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr> 
-                     <pc force="weak">,</pc> 
+                    <unclear reason="faded">en est la</unclear>
+                    <choice><sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr></choice>
+                    <pc force="weak">,</pc>
                     <unclear reason="faded">celui de la</unclear>
                     <term ref="#transformation"><emph><hi rend="underline"><choice><abbr type="abbreviation">trans</abbr></choice> 
-                    <add place="underlinear" hand="author"><expan>fora<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
-                    <unclear reason="illegible">dans le <term red="tempsEspace">temps</term><pc force="strong">.</pc></unclear>
-                 
-                
+                    <add place="underlinear" hand="author"><abbr>formt</abbr><expan>transform<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
+                    <unclear reason="illegible">dans le <term rend="tempsEspace">temps</term><pc force="strong">.</pc></unclear>
+            </ab> 
+     </div>      
  
 
 
         <div type="pg20">                    
-            <pb n="20" type="pageNum" place="top left" facs="#numero_pg20"/> 
+            <fw n="20" type="pageNum" place="top_left" facs="#numero_pg20"/> 
             
               <ab n="1" type="first_section" xml:id="Par1_pg20">
                 <lb facs="#R1_pg20"/>
@@ -283,12 +287,12 @@
                   <seg>l'<term ref="#espace"> espace</term> et</seg>
                   <add hand="author" place="supralinear"><unclear reason="eccentric ductus">de</unclear></add>
                   <unclear reason= "faded">celui </unclear>
-                  <unclear reason ="eccentric ductus">d</unclear>
+                  <choice><sic>d</sic><corr>de</corr></choice>
                   <unclear reason="faded">la</unclear>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="5" extent="chars"> </gap></del>
+                  <del rend="overstrike" hand="author">trans<pc force="inter">-</pc><gap reason="cancelled" quantity="5" extent="chars"> </gap></del>
                                                     
                 <lb facs="#R3_pg20"/>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="3" extent="words"> </gap></del>
+                  <del rend="overstike" hand="author"><pc force="inter">=</pc>formation selon l'espace<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
                   <term ref="#divergence" ><emph><hi rend="underline">divergence</hi></emph></term> 
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
                   <seg>l'<term rend="espace">espace</term></seg>
@@ -300,10 +304,10 @@
                                                       
                 <lb facs="#R5_pg20"/>
                   <seg>placer sur</seg>
-                  <choice><unclear reason="eccentric ductus"><sic>1</sic>></unclear><corr>un</corr></choice>
+                  <choice><abbr type="brevigraph">1</abbr><expan>un</expan></choice>
                   <w>terrain</w>
-                  <choice><unclear reason="eccentric ductus"><abbr type="suspension">parft</abbr> </unclear> 
-                  <expan>parf<ex>ai</ex>t<ex>ement</ex></expan></choice>
+                  <choice><sic>parftt</sic> 
+                  <corr>parfaitement</corr></choice>
                   <del rend="unreadable" hand= "author"><gap reason="cancelled" extent="chars"></gap></del>
                  <seg> net pour</seg>
                                                        
@@ -320,7 +324,7 @@
                   <unclear reason="eccentric ductus"> sûreté</unclear> 
                   <seg> le sujet</seg>
                   <unclear reason="faded">spécial de la </unclear>
-                  <choice><term ref="#phonetique"><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></term></choice>
+                  <term ref="#phonetique"><choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></choice></term>
                   <seg> du <unclear reason= "eccentric ductus">grec et</unclear>du latin</seg>
                                                      
               <lb facs= "#R8_pg20"/>
@@ -329,9 +333,9 @@
                   <term ref= "#principe">principes généraux</term>
                                                      
                 <lb facs= "#R9_pg20"/>
-                  <unclear reason="eccentric ductus">se présentent
-                   <del rend="unreadable" hand="author"><gap reason="cancelled" unit="word"> </gap></del>
-                   <seg> sans cesse <pc force="strong">.</pc></unclear></seg>
+                  <seg>se présentent</seg>
+                   <del rend="overstrike" hand="author">en foul<gap reason="cancelled" quantity="2" extent="word"> </gap></del>
+                   <seg>sans cesse <pc force="strong">.</pc></seg>
              </ab>
             </div>
              
@@ -402,7 +406,7 @@
                   </gloss>
                 </item>
                 <item>
-                  <term xml:id="Temps/espace"> Temps - Espace</term>
+                  <term xml:id="Temps-espace"> Temps - Espace</term>
                   <gloss target="#differencie">
                    fattori di variazione di una lingua
                   </gloss>
@@ -456,6 +460,8 @@
                     speciale, che ha caratteri proprî, distintivi
                   </gloss>
                 </item>
+              </list>
+            </div>
                 
 
 
