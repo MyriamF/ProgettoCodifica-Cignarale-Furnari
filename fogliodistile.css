@@ -320,12 +320,14 @@ margin:0px;
 	}
 	
 .nascondi {
-	overflow:hidden;background: blacktext-align: justify;
+	overflow:hidden;
+  background: black;
+  text-align: justify;
 	word-spacing: 1px; 
 	line-height: 40px;
 	font-size:20px;
-    margin: 50px;
-    padding: 50px;
+  margin: 50px;
+  padding: 50px;
 	text-align: justify;
 	word-spacing: 1px; 
 	line-height: 40px;
