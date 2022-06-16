@@ -70,12 +70,17 @@
 						  préoccuper du facteur de la distance géographique.
 						  Même il ne me sera possible d'aborder dans cette séance que le premier point principal à poser; c'est le principe de la continuité dans 
 						  le temps; dans notre séance de mardi nous aurons à examiner le principe qui en est la contrepartie, celui de la transformation dans le temps. </p>
+						 
 						  
-						  </div>	
-						  <input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';">
+						
+						  <div class="mostraTraduzione">
+						  <label for="traduzione_pg19">
+						  <input class="showbutton" id ="tradizione_pg19" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
+						  </label>	
+						</div>
 						  <div class="nascondi"></div>
 				  
-						  <div style="overflow-y: scroll; width:950px; height:100px; float: right">
+						  <div class="traduzione_pg19" style="overflow-y: scroll; width:950px; height:100px; float: right">
 						  <h3>TRADUZIONE</h3>
 						  <p class="frasi" id="line"> 
 						  Stringiamo ora un po’ più vicino, Signori, ciò che è contenuto in questa parola e in questa visione della Storia applicata alla lingua. 
