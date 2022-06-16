@@ -50,7 +50,7 @@
 
 				</div>
 				  
-			  </section>
+			  
 			  <section id="section-2">
 				<div class="titolo">
 				  <h2>Pagina 19</h2>
