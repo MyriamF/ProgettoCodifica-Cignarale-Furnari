@@ -30,7 +30,7 @@
 		
 		<div class="inner" id="parte1">
 				  <h3 id="informazioni">Progetto di Codifica di Testi a cura di</h3>
-				  <xsl:value-of select="//tei:titleStmt//tei:respStmt//tei:rep"></xsl:value-of>
+				  <xsl:value-of select="//tei:titleStmt//tei:respStmt//tei:resp"></xsl:value-of>
 				  <h3>Progetto di Codifica di Testi</h3>
 
 				  <p class="frasi" id="intro"> Il manoscritto del linguista francese di Ferdinand de Saussure si compone di tre parti, ognuna delle quali denominata “Prolusione ginevrina”. 
@@ -127,12 +127,10 @@
 		
 
 	
+
+<script src="variabiliJS.js" type="text/JavaScript"></script>
 </body>
-<script src="JS.js" type="text/JavaScript"></script>
-  <script>
-    var elm = document.querySelector('#main-header');
-    var ms = new MenuSpy(elm);
-  </script>
+  
   </html>
   
 	</xsl:template>
