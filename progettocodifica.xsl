@@ -124,10 +124,7 @@
        <h2>Informazioni</h2>
       </div>
 	
-		<script type="text/JavaScript" language="JavaScript">
-			var elm = document.querySelector('#main-header');
-			var ms = new MenuSpy(elm);
-		  </script>
+		
 
 	
 </body>
