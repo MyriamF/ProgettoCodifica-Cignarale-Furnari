@@ -11,26 +11,27 @@
   <html>
 	<head>
     <title>Prolusioni</title>
-	<xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"></xsl:value-of>
+	
 	<link rel="stylesheet" type="text/css" href="fogliodistile.css"></link>
 	<script src="JS.js" type="text/JavaScript"></script>
 	</head>
 
 	<body>
 		<header id="main-header" class="fixed-header">
-		  <nav>
+			<nav>
 			<ul>
 				<li class="active"><a href="#first">Introduzione</a></li>
 				<li><a href="#section-2">Pagina 19</a></li>
 				<li><a href="#section-3">Pagina 20</a></li>
 				<li><a href="#section-4">Informazioni</a></li>
 			</ul>
-		  </nav>
+			</nav>
 		</header>
-		
-		<div class="inner" id="parte1">
-				  <h3 id="informazioni">Progetto di Codifica di Testi a cura di</h3>
-				  <xsl:value-of select="//tei:titleStmt//tei:respStmt//tei:resp"></xsl:value-of>
+		<main>
+			<section id="first">
+				<div class="inner">
+				  <h1>Prolusioni di F.De Saussure </h1>
+				  
 				  <h3>Progetto di Codifica di Testi</h3>
 
 				  <p class="frasi" id="intro"> Il manoscritto del linguista francese di Ferdinand de Saussure si compone di tre parti, ognuna delle quali denominata “Prolusione ginevrina”. 
@@ -90,7 +91,6 @@
 						  di martedì dovremo esaminare il principio che ne è la contropartita, quello della trasformazione nel tempo.</p></div>
 					  </div>
 						  </div>
-						  </input>
 			  </section>
 			</main>
 			<section id="section-3">
@@ -127,10 +127,7 @@
 		
 
 	
-
-<script src="variabiliJS.js" type="text/JavaScript"></script>
 </body>
-  
   </html>
   
 	</xsl:template>
