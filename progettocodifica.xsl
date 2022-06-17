@@ -28,13 +28,14 @@
 			</ul>
 			</nav>
 		</header>
-
-		<div class="intro" id="first">
+        
+		<section id="first">
+		<div class="inner">
 			<h1>Prolusioni di F. de Saussure</h1>
-			<h3>Progetto di Codifica di Testi a cura di:</h3><xsl:value-of select="//tei:respStmt"></xsl:value-of>
+			<h3>Progetto di Codifica di Testi a cura di:</h3><xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"></xsl:value-of>
 
 		</div>
-	
+	    </section>
 	</body>
   </html>
   
