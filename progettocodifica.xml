@@ -87,7 +87,7 @@
      <body>
       
     <div type="pg19" xml:id="Testopg19">  <!-- inizio pagina 19 --> 
-          <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19"/> 
+          <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19">19</fw>
           
               <ab n="1" type="first_section" xml:id="Par1_pg19">
                 <lb facs="#R1_pg19"/>
@@ -278,8 +278,8 @@
  
 
 
-        <div type="pg20">                    
-            <fw n="20" type="pageNum" place="top_left" facs="#numero_pg20"/> 
+        <div type="pg20" xml:id="Testopg20">                    
+            <fw n="20" type="pageNum" place="top_left" facs="#numero_pg20">20</fw> 
             
               <ab n="1" type="first_section" xml:id="Par1_pg20">
                 <lb facs="#R1_pg20"/>

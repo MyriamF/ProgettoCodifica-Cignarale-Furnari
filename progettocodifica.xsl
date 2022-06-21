@@ -47,8 +47,18 @@
 		   style="float: left; margin-right: 40px; margin-bottom: 15px; margin-top: 135px; margin-left: 50px;"/> 
 		    
 		  <div class="storia" id="storia3">
-		  <p class="frasi" id="line"></p>
+		  <p class="frasi" id="line">
+			<xsl:apply-templates select="//tei:div[@xml:id='Testopg19']/tei:fw"/>
+			<xsl:apply-templates select="//tei:div[@xml:id='Testopg19']" mode="testo"/>
+ 			</p>
 		  </div>
+
+		  </div>
+			<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';">
+			<div class="nascondi"></div>
+			<div style="overflow-y: scroll; width:950px; height:100px; float: right">
+			<h3>TRADUZIONE</h3>
+			</div>
 	      </section>
 
 		
