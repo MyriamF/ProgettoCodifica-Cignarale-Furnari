@@ -86,7 +86,7 @@
     
      <body>
       
-    <div type="pg19" xml:id="Testopg19">  <!-- inizio pagina 19 --> 
+    <div type="pg19" xml:id="Testo_pg19">  <!-- inizio pagina 19 --> 
           <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19">19</fw>
           
               <ab n="1" type="first_section" xml:id="Par1_pg19">
@@ -278,7 +278,7 @@
  
 
 
-        <div type="pg20" xml:id="Testopg20">                    
+        <div type="pg20" xml:id="Testo_pg20">                    
             <fw n="20" type="pageNum" place="top_left" facs="#numero_pg20">20</fw> 
             
               <ab n="1" type="first_section" xml:id="Par1_pg20">
@@ -346,7 +346,7 @@
              </ab>
             </div>
              
-            <div xml:lang="it" type="traduzione" n="1">
+            <div xml:lang="it" type="traduzione" n="1" xml:id="Traduzione_pg19">
               <ab corresp="#Par1_pg19">
                 Stringiamo ora un po’ più vicino, Signori, ciò che è contenuto in questa parola e in questa visione della Storia applicata alla lingua. Quasi subito si presenterà la necessità di classificare le nostre idee sotto due polarità.
               </ab>
@@ -364,7 +364,7 @@
               </ab>
             </div>
 
-            <div xml:lang="it" type="traduzione" n="1">
+            <div xml:lang="it" type="traduzione" n="2" xml:id="Traduzione_pg20">
               <ab corresp="#Par1_pg20">
                 Poi, allo stesso modo, considereremo ciò che si può dire del principio della continuità nello spazio e quello della divergenza nello spazio.
               </ab>
