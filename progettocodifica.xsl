@@ -128,6 +128,7 @@
       <h2>Parole Chiave</h2>
 	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
    </div>
+
 	  
 </section>
 
