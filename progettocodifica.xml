@@ -86,7 +86,7 @@
     
      <body>
       
-    <div type="pg19">  <!-- inizio pagina 19 --> 
+    <div type="pg19" xml:id="Testopg19">  <!-- inizio pagina 19 --> 
           <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19"/> 
           
               <ab n="1" type="first_section" xml:id="Par1_pg19">

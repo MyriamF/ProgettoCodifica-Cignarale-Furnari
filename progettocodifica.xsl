@@ -45,7 +45,13 @@
 	   <a id= "bottone" type="button" href="retro19.jpg" style="float: left; margin-right: -250px; margin-top: 30px; margin-left: 50px;"  >RETRO</a>
 		  <img id= "foto" src="pagina19.jpg" width="150" height="150" 
 		   style="float: left; margin-right: 40px; margin-bottom: 15px; margin-top: 135px; margin-left: 50px;"/> 
+		    
+		  <div class="storia" id="storia3">
+		  <p class="frasi" id="line"></p>
+		  </div>
 	      </section>
+
+		
 	</body>
   </html>
 </xsl:template>
