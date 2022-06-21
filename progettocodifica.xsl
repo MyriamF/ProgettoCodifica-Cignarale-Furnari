@@ -32,9 +32,9 @@
 		<section id="first">
 		<div class="inner">
 			<h1>Prolusioni di F. de Saussure</h1>
-			<h3>Progetto di Codifica di Testi a cura di:</h3><xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"></xsl:value-of>
-			<p class="frasi" id="intro"></p><xsl:value-of select="tei:teiHeader/tei:sourceDesc/tei:listaBibl/tei:msDesc/tei:msContents/tei:summary"></xsl:value-of>
-        </div>t
+			<h3>Progetto di Codifica di Testi a cura di:<xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"></xsl:value-of></h3>
+			<p class="frasi" id="intro"><xsl:value-of select="tei:teiHeader/tei:sourceDesc/tei:listaBibl/tei:msDesc/tei:msContents/tei:summary"></xsl:value-of></p>
+        </div>
 		</section>
 
 	    <section id="section-2">
