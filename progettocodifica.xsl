@@ -10,8 +10,7 @@
 <xsl:template match="/">
   <html>
 	<head>
-    <title>Prolusioni</title>
-	<xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"></xsl:value-of>
+    <title><xsl:value-of select="//tei:titleStmt/tei:title"></xsl:value-of></title>
 	<link rel="stylesheet" type="text/css" href="fogliodistile.css"></link>
 	<script src="JS.js" type="text/JavaScript"></script>
 	<script src="variabiliJS.js" type="text/JavaScript"></script>
@@ -31,13 +30,18 @@
         
 		<section id="first">
 		<div class="inner">
-			<h1>Prolusioni di F. de Saussure</h1>
-			<h3>Progetto di Codifica di Testi a cura di:<xsl:value-of select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:respStmt/tei:resp"></xsl:value-of></h3>
-			<p class="frasi" id="intro"><xsl:value-of select="tei:teiHeader/tei:sourceDesc/tei:listaBibl/tei:msDesc/tei:msContents/tei:summary"></xsl:value-of></p>
+			<h1><xsl:value-of select="//tei:titleStmt/tei:title"></xsl:value-of></h1>
+			<h3><xsl:value-of select="//tei:respStmt"></xsl:value-of></h3>
+			
+			<br/>
+			<br/>
+			<br/>
+
+			<p class="frasi" id="intro"><xsl:value-of select="//tei:msContents/tei:summary"></xsl:value-of></p>
         </div>
 		</section>
 
-<br/>
+		<br/>
 <br/>
 <br/>
 <br/>
@@ -48,8 +52,9 @@
 	    </div>
 	
 	   <a id= "bottone" type="button" href="retro19.jpg" style="float: left; margin-right: -250px; margin-top: 30px; margin-left: 50px;"  >RETRO</a>
-		  <img id= "foto" src="pagina19.jpg" width="150" height="150" 
-		   style="float: left; margin-right: 40px; margin-bottom: 15px; margin-top: 135px; margin-left: 50px;"/> 
+		  <xsl:apply-templates select="//tei:surface[@xml:id='facspage19']"/><!--Immagine-->
+                                         
+
 		    
 		  <div class="storia" id="storia3">
 		  <p class="frasi" id="line">
@@ -88,6 +93,9 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
 
 
 	<section id="section-3">
@@ -95,10 +103,8 @@
 	    <h2>Pagina 20</h2>
        </div>
 	   <a id= "bottone" type="button" href="retro20.jpeg" style="float: left; margin-right: -250px; margin-top: 30px; margin-left: 50px;"  >RETRO</a>
-	   <img id= "foto" src="pagina20.jpg" width="150" height="150" 
-		style="float: left; margin-right: 40px; margin-bottom: 15px; margin-top: 135px; margin-left: 50px;" /> 
-		
-      
+	   		<xsl:apply-templates select="//tei:surface[@xml:id='facspage20']"/><!--Immagine-->
+		  
 			<div class="storia" id="storia3">
 				<p class="frasi" id="line">
 				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']/tei:fw"/>
@@ -127,25 +133,118 @@
       <div class="titolo">
       <h2>Parole Chiave</h2>
 	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
-   </div>
+	 <br/>
+	 <br/>
+	 <xsl:apply-templates select="//tei:respStmt[@xml:id='MF']"/>
+    <br/>
+    <br/>
+    <xsl:apply-templates select="//tei:respStmt[@xml:id='EF']"/>
 
+   </div>
 	  
 </section>
 
-
-
-	 
-
-
-
+	
 		
 	</body>
   </html>
+</xsl:template>
+
+
+
+  
+<xsl:template match="//tei:titleStmt">  <!--template titolo-->
+    
+	<xsl:value-of select="./tei:title"/>
+	<xsl:for-each select="./tei:respStmt">
+		<xsl:value-of select="concat(./tei:resp,' ')"/>
+		
+		<xsl:choose>
+			<xsl:when test="count(./tei:name)=2">
+				<xsl:value-of select="concat(./tei:name,', ',./tei:name[last()])"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="./tei:name"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:for-each>
+
 </xsl:template>
   
 <xsl:template match="//tei:div[@xml:id='Testo_pg19']/tei:fw">	<!--Numero pagina 19-->
 	<xsl:value-of select="."/>&#160;
 </xsl:template>
+
+
+<xsl:template match="//tei:surface[@xml:id='facspage19']"> <!--Immagine pagina 19-->
+        <div class="immagini">
+        <img alt="pagina 19" usemap="#map2">
+            <xsl:attribute name="src">
+                <xsl:value-of select="./tei:graphic/@url"/>
+            </xsl:attribute>
+        </img>
+
+        <map name="map2">
+            <xsl:for-each select="//tei:surface[@xml:id='facspage19']//tei:zone">
+                <xsl:element name="area" use-attribute-sets="attrMap"/>
+            </xsl:for-each>
+        </map>
+        </div>
+    </xsl:template>
+
+	<xsl:template match="//tei:surface[@xml:id='facspage20']">		<!--Immagine pagina 20-->
+		<div class="immagini">
+			<img alt="pagina 19" usemap="#map2">
+				<xsl:attribute name="src">
+					<xsl:value-of select="./tei:graphic/@url"/>
+				</xsl:attribute>
+			</img>
+
+			<map name="map2">
+				<xsl:for-each select="//tei:surface[@xml:id='facspage19']//tei:zone">
+					<xsl:element name="area" use-attribute-sets="attrMap"/>
+				</xsl:for-each>
+			</map>
+		</div>
+	</xsl:template>
+
+	 
+    <xsl:attribute-set name="attrMap">
+        <xsl:attribute name="shape">rect</xsl:attribute>
+        <xsl:attribute name="coords"><xsl:value-of select="concat(./@ulx,',',./@uly,',',./@lrx,',',./@lry)"/></xsl:attribute>
+        <xsl:attribute name="href"><xsl:value-of select="concat('##',./@xml:id)"/></xsl:attribute>
+    </xsl:attribute-set>
+
+
+	<!--Glossario pagina 3-->
+	<xsl:template match="//tei:div[@xml:id='glossary']" name="Glossario">
+		<ul>
+			<xsl:for-each select=".//tei:item">
+				<li>
+					<xsl:element name="term" use-attribute-sets="terminiLista">
+						<xsl:value-of select="./tei:term"/>
+					</xsl:element>:
+					<xsl:value-of select="./tei:gloss"/>
+				</li>
+			</xsl:for-each>
+		</ul>
+	</xsl:template>
+
+	<xsl:attribute-set name="terminiLista">
+		<xsl:attribute name="id">
+			<xsl:value-of select="./tei:term/@xml:id"/>
+		</xsl:attribute>
+	</xsl:attribute-set>
+
+	<!--Attributi di ogni elemento terminologico-->
+	<xsl:attribute-set name="terminiTesto">
+		<xsl:attribute name="href">
+			<xsl:value-of select="./@ref"/>
+		</xsl:attribute>
+	</xsl:attribute-set>
+
+
+
 
         
 
