@@ -61,68 +61,55 @@
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']/tei:fw"/>
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']" mode="testo"/>
  			</p>
-		  </div>
 
 		  	<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
-				<div class="nascondi"><div>
-				<h3>TRADUZIONE</h3>
-				<div style="overflow-y: scroll; width:950px; height:100px">
-                <p class="frasi" id="line"> 
-					<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg19']" mode="traduzione"/>
-			    </p></div>
-            </div>
+				<div class="nascondi">
+					<div>
+					<h3>TRADUZIONE</h3>
+					<div style="overflow-y: scroll; width:1000px; height:100px">
+					<p class="frasi" id="line"> 
+						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg19']" mode="traduzione"/>
+					</p>
+					</div>
+				</div>
 			</div>
+		</div>
 			
 	</section>
-
-	<br/>
+<p>
 <br/>
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
+</p>
 
 	<section id="section-3">
       <div class="titolo">
 	    <h2>Pagina 20</h2>
-       </div>
-	   <a id= "bottone" type="button" href="retro20.jpeg" style="float: left; margin-right: -250px; margin-top: 30px; margin-left: 50px;"  >RETRO</a>
-	   		<xsl:apply-templates select="//tei:surface[@xml:id='facspage20']"/><!--Immagine-->
-		  
+	  </div>
+
+	   <a id= "bottone" type="button" href="retro20.jpeg" style="float: left; margin-right: -250px; margin-top: 30px; margin-left: 50px;"  >
+		RETRO
+	   </a>
+		<xsl:apply-templates select="//tei:surface[@xml:id='facspage20']"/><!--Immagine-->
+		
 			<div class="storia" id="storia3">
 				<p class="frasi" id="line">
 				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']/tei:fw"/>
 				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']"/>
+				</p>
+
+				<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
+				<div class="nascondi2">
+					<h3>TRADUZIONE</h3>
+					<div style="overflow-y: scroll; width:950px; height:100px">
+					<p class="frasi" id="line"> 
+					<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
 					</p>
-			</div>
-
-		<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
-				<div class="nascondi"><div>
-				<h3>TRADUZIONE</h3>
-				<div style="overflow-y: scroll; width:950px; height:100px">
-                <p class="frasi" id="line"> 
-				<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
-             </p></div>
-            </div>
-
-    </div>
- 		</section>
+					</div>
+			    </div>
+		</div>
+ 	</section>
 
 	  <br/>
   <br/>

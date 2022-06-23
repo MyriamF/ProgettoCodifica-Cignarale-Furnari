@@ -254,9 +254,8 @@ input[type=button]{
 	word-spacing: 1px; 
 	line-height: 40px;
 	font-size:20px;
-    margin: 50px;
-    padding: 50px;
-	
+  margin: 50px;
+  padding: 50px;
 }
 
 #line{
@@ -283,7 +282,8 @@ margin:0px;
 }
 
 .showbutton {
-	display:block;margin:4px 0;
+	display:block;
+  margin:4px 0;
 	}
 	
 .nascondi {
@@ -294,16 +294,40 @@ margin:0px;
 	line-height: 40px;
 	font-size:20px;
   margin: 50px;
-  padding: 50px;
 	text-align: justify;
 	word-spacing: 1px; 
 	line-height: 40px;
 	font-size:20px;
+  margin-top: -160px;
+  margin-left: 200px;
+  display:block;
 	}
+
+  .nascondi2 {
+  overflow:hidden;
+  background: black;
+  text-align: justify;
+  word-spacing: 1px; 
+  line-height: 40px;
+  font-size:20px;
+  margin: 50px;
+  padding: 50px;
+  text-align: justify;
+  word-spacing: 1px; 
+  line-height: 40px;
+  font-size:20px;
+  float: right; 
+  margin-left: 300px;
+}
 	
-.nasondi > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}
+.nascondi > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}
 .showbutton[value="Mostra"] + .nascondi > div {margin-top:-100%;}
 .showbutton[value="Nascondi"] + .nascondi {padding:4px;}
+
+.nascondi2 > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}
+.showbutton[value="Mostra"] + .nascondi2 > div {margin-top:-100%;}
+.showbutton[value="Nascondi"] + .nascondi2 {padding:4px;}
+
 
 #bottone{
 	width:200px;
