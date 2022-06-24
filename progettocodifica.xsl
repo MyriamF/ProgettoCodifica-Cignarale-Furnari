@@ -40,8 +40,6 @@
 			<p class="frasi" id="intro"><xsl:value-of select="//tei:msContents/tei:summary"></xsl:value-of></p>
         </div>
 		</section>
-
-		<br/>
 <br/>
 <br/>
 <br/>
@@ -66,7 +64,7 @@
 				<div class="nascondi">
 					<div>
 					<h3>TRADUZIONE</h3>
-					<div style="overflow-y: scroll; width:1000px; height:100px">
+					<div style="overflow-y: scroll; width:1000px; height:150px">
 					<p class="frasi" id="line"> 
 						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg19']" mode="traduzione"/>
 					</p>
@@ -101,24 +99,30 @@
 
 				<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
 				<div class="nascondi2">
+					<div>
 					<h3>TRADUZIONE</h3>
 					<div style="overflow-y: scroll; width:950px; height:100px">
 					<p class="frasi" id="line"> 
-					<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
+						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
 					</p>
 					</div>
 			    </div>
+			</div>
 		</div>
- 	</section>
+ 	
+	</section>
 
-	  <br/>
-  <br/>
-  <br/>
-  <br/>
+	<p>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+	</p>
 
 	<section id="section-4">
       <div class="titolo">
       <h2>Parole Chiave</h2>
+	  <div class ="glossario">
 	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
 	 <br/>
 	 <br/>
@@ -128,6 +132,8 @@
     <xsl:apply-templates select="//tei:respStmt[@xml:id='EF']"/>
 
    </div>
+</div>
+
 	  
 </section>
 
@@ -229,11 +235,4 @@
 			<xsl:value-of select="./@ref"/>
 		</xsl:attribute>
 	</xsl:attribute-set>
-
-
-
-
-        
-
-
 </xsl:stylesheet>

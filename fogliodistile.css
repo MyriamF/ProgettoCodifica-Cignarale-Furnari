@@ -191,7 +191,7 @@ img{
 
 h1{
   margin: 0;
-  margin-top: 50px;
+  margin-top: 100px;
   font-weight: normal;
   font-size: 3em;
   font-variant: small-caps;
@@ -299,8 +299,8 @@ margin:0px;
 	line-height: 40px;
 	font-size:20px;
   margin-top: -160px;
-  margin-left: 200px;
-  display:block;
+  margin-right: -100px;
+  float: right;
 	}
 
   .nascondi2 {
@@ -316,8 +316,10 @@ margin:0px;
   word-spacing: 1px; 
   line-height: 40px;
   font-size:20px;
+  margin-top: -300px;
+  margin-right: -95px;
+  padding-right: 10px;
   float: right; 
-  margin-left: 300px;
 }
 	
 .nascondi > div {-webkit-transition: all 0.3s ease;-moz-transition: margin 0.3s ease;-o-transition: all 0.3s ease;transition: margin 0.3s ease;}
@@ -336,4 +338,19 @@ margin:0px;
 	font-size: 27px;
 	border: 2px solid;
 	border-radius: 50px 50px 50px 50px;
+}
+
+.glossario {
+  overflow:hidden;
+  background: black;
+  text-align: justify;
+  word-spacing: 1px; 
+  line-height: 40px;
+  font-size:20px;
+  margin: 50px;
+  padding: 50px;
+  text-align: justify;
+  word-spacing: 1px; 
+  line-height: 40px;
+  font-size:20px;
 }
