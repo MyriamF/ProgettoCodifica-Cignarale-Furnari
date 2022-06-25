@@ -56,7 +56,7 @@
 		    
 		  <div class="storia" id="storia3">
 		  <p class="frasi" id="line">
-			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']/tei:fw"/>
+			<xsl:apply-templates select="//tei:fw[@xml:id='numero_pg19']"/>
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']" mode="testo"/>
  			</p>
 
@@ -93,7 +93,7 @@
 		
 			<div class="storia" id="storia3">
 				<p class="frasi" id="line">
-				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']/tei:fw"/>
+				<xsl:apply-templates select="//tei:fw[@xml:id='numero_pg20']"/>
 				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']"/>
 				</p>
 
@@ -164,8 +164,12 @@
 
 </xsl:template>
   
-<xsl:template match="//tei:div[@xml:id='Testo_pg19']/tei:fw">	<!--Numero pagina 19-->
-	<xsl:value-of select="."/>&#160;
+<xsl:template match="//tei:fw[@xml:id='numero_pg19']">	<!--Numero pagina 19-->
+	<xsl:value-of select="."/>
+</xsl:template>
+
+<xsl:template match="//tei:fw[@xml:id='numero_pg20']">	<!--Numero pagina 19-->
+	<xsl:value-of select="."/>
 </xsl:template>
 
 
@@ -187,7 +191,7 @@
 
 	<xsl:template match="//tei:surface[@xml:id='facspage20']">		<!--Immagine pagina 20-->
 		<div class="immagini">
-			<img alt="pagina 19" usemap="#map2">
+			<img alt="pagina 20" usemap="#map2">
 				<xsl:attribute name="src">
 					<xsl:value-of select="./tei:graphic/@url"/>
 				</xsl:attribute>
