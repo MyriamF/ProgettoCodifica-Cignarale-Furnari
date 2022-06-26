@@ -288,6 +288,7 @@ margin:0px;
 	
 .nascondi {
 	overflow:hidden;
+  background: black;
   text-align: justify;
 	word-spacing: 1px; 
 	line-height: 40px;
@@ -304,6 +305,7 @@ margin:0px;
 
   .nascondi2 {
   overflow:hidden;
+  background: black;
   text-align: justify;
   word-spacing: 1px; 
   line-height: 40px;
