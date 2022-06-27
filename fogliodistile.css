@@ -251,18 +251,19 @@ input[type=button]{
 
 #storia3{
 	text-align: justify;
-	word-spacing: 1px; 
-	line-height: 40px;
-	font-size:20px;
+	word-spacing: 0.5px; 
+	line-height: 30px;
+	font-size:15px;
   margin: 50px;
   padding: 50px;
 }
 
 #line{
 	text-align: justify;
-	word-spacing: 1px; 
-	line-height: 40px;
-	font-size:20px;
+	word-spacing: 0.5px; 
+	line-height: 20px;
+	font-size:15px;
+  margin-top: -120px;
 	/*font-family:Arial;*/	
 }
 

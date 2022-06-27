@@ -242,6 +242,78 @@
 
 	<!-- formattazione testo -->
 
+<xsl:template match="//tei:div[@xml:id='Testo_pg19']" name="templateTesto" mode="testo">
+  
+    
+      <xsl:for-each select="./tei:ab//node()">
+	    
+
+	 <xsl:choose>
+           <xsl:when test="name()='lb'"> <!--line beginning-->
+              <br/> 
+			  <xsl:element name="tag" use-attribute-sets="aCapo">              
+             </xsl:element>
+           </xsl:when> 
+
+	        <xsl:when test="name()='unclear'"> <!--testo sbiadito-->
+                <xsl:value-of select="concat(. , ' ')"/> 
+             </xsl:when>
+
+		    <xsl:when test="name()='seg'"> <!--testo semplice-->
+                 <xsl:value-of select="concat(. , ' ')"/> 
+            </xsl:when>
+
+			<xsl:when test="name()='hi'"> <!--termini-->
+			
+			<u><xsl:value-of select="concat(. , ' ')"/></u>
+		
+			</xsl:when>
+                  
+
+          
+
+		
+
+
+			<xsl:when test="name()='pc'"> <!--termini-->
+                 <xsl:value-of select="concat(. , ' ')"/> 
+            </xsl:when>
+
+			<xsl:when test="name()='w'"> <!--termini-->
+                 <xsl:value-of select="concat(. , ' ')"/> 
+            </xsl:when>
+
+			<xsl:when test="name()='add'"> <!--termini-->
+                 <xsl:value-of select="concat(. , ' ')"/> 
+            </xsl:when>
+
+
+
+
+
+                                    
+                               
+                            
+
+						
+						
+                        
+		</xsl:choose>
+    
+  </xsl:for-each>
+
+
+</xsl:template>
+
+
+    <xsl:attribute-set name="aCapo">
+        <xsl:attribute name="id"><xsl:value-of select="./@facs"/></xsl:attribute>
+    </xsl:attribute-set>
+
+
+	 
+
+
 
 
 </xsl:stylesheet>
