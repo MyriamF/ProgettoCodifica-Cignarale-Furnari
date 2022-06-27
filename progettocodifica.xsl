@@ -93,7 +93,6 @@
 		
 			<div class="storia" id="storia3">
 				<p class="frasi" id="line">
-				<xsl:apply-templates select="//tei:fw[@xml:id='numero_pg20']"/>
 				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']"/>
 				</p>
 
@@ -239,5 +238,10 @@
 			<xsl:value-of select="./@ref"/>
 		</xsl:attribute>
 	</xsl:attribute-set>
+
+
+	<!-- formattazione testo -->
+
+
 
 </xsl:stylesheet>
