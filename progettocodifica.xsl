@@ -60,7 +60,7 @@
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']" mode="testo"/>
  			</p>
 
-		  	<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
+		  	<input class="showbutton" type="button" style="float:left" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
 				<div class="nascondi">
 					<div>
 					<h3>TRADUZIONE</h3>

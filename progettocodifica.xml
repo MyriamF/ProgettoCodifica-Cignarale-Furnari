@@ -266,7 +266,8 @@
                    <seg>est le <term ref="#principe">principe</term> de la</seg>
                    <term ref="#continuite" ><emph><hi rend="underline">continuité</hi></emph></term> 
                    <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan></choice>
-                   <w>le</w> <term ref="#tempsEspace">temps</term><pc>;</pc>
+                   <w>le</w> 
+                   <term ref="#tempsEspace">temps</term><pc>;</pc>
                                                 
                   <lb facs= "#R26_pg19"/>    
                     <seg>dans notre</seg>
