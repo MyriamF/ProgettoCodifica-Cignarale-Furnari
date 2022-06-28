@@ -250,23 +250,45 @@
            </xsl:when> 
 
 	       <xsl:when test="name()='unclear'"> <!--testo sbiadito-->
-                <xsl:value-of select="."/> 
+		     
+			 <xsl:value-of select="concat(. , ' ')"/> 
+		   
            </xsl:when>
 
 		    <xsl:when test="name()='seg'"> <!--testo semplice-->
-                 <xsl:value-of select="."/> 
+                 <xsl:value-of select="concat(. , ' ')"/> 
             </xsl:when>
 
+			 <xsl:when test="name()='w'"> <!--parole semplici-->
+                 <xsl:value-of select="concat(. , ' ')"/> 
+            </xsl:when>
+			
+
 		<xsl:when test="name()='term'">
+			<xsl:if test="name(..)='ab' and not(.//tei:unclear) and not(name(./*)='emph')">
+                  <xsl:value-of select="concat(. , ' ')"/>
+		    </xsl:if>
+		
            <xsl:choose>
 			 <xsl:when test="name(./*)='emph'">
-                 <u><xsl:value-of select="."/> </u>
+                 <u><xsl:value-of select="concat(. , ' ')"/></u>
 			 </xsl:when>
-			 <xsl:otherwise>
-				<xsl:value-of select="."/> 
-			 </xsl:otherwise>
 			</xsl:choose>
-		</xsl:when>
+
+			</xsl:when>
+
+		 <xsl:when test="name()='add'"> <!--aggiunte-->
+		 <xsl:choose>
+		 <xsl:when test="name(./*)='unclear'">
+                          
+			</xsl:when>   
+            <xsl:otherwise>
+				<xsl:value-of select="concat(. , ' ')"/>
+
+			</xsl:otherwise>
+            </xsl:choose>
+
+            </xsl:when>
 
 		<xsl:when test="name()='choice'">
 		   <xsl:if test="name(./*)='abbr'and not(.//tei:term)"> <!--abbreviazioni-->
@@ -275,22 +297,24 @@
          <xsl:if test="name(./*)='sic' and not(.//tei:term)"> <!--errori-->
                 <xsl:value-of select="concat(./tei:corr , ' ')"/>
          </xsl:if>
-		
-		</xsl:when>
+	  </xsl:when>
+
+
 
 
 
 
 		
                   
-
+<!--Ricordarsi tag SUPPLIED 
+	DEL SPAN-->
           
 
 		
 
 
 			<xsl:when test="name()='pc'"> <!--termini-->
-                 <xsl:value-of select="concat(. , ' ')"/> 
+		      <xsl:value-of select="concat(. , ' ')"/>
             </xsl:when>
 
 			<xsl:when test="name()='w'"> <!--termini-->
