@@ -243,31 +243,45 @@
 	<!-- formattazione testo -->
 
 <xsl:template match="//tei:div[@xml:id='Testo_pg19']" name="templateTesto" mode="testo">
-  
-    
       <xsl:for-each select="./tei:ab//node()">
-	    
-
-	 <xsl:choose>
+	     <xsl:choose>
            <xsl:when test="name()='lb'"> <!--line beginning-->
-              <br/> 
-			  <xsl:element name="tag" use-attribute-sets="aCapo">              
-             </xsl:element>
+              <br/>
            </xsl:when> 
 
-	        <xsl:when test="name()='unclear'"> <!--testo sbiadito-->
-                <xsl:value-of select="concat(. , ' ')"/> 
-             </xsl:when>
+	       <xsl:when test="name()='unclear'"> <!--testo sbiadito-->
+                <xsl:value-of select="."/> 
+           </xsl:when>
 
 		    <xsl:when test="name()='seg'"> <!--testo semplice-->
-                 <xsl:value-of select="concat(. , ' ')"/> 
+                 <xsl:value-of select="."/> 
             </xsl:when>
 
-			<xsl:when test="name()='hi'"> <!--termini-->
-			
-			<u><xsl:value-of select="concat(. , ' ')"/></u>
+		<xsl:when test="name()='term'">
+           <xsl:choose>
+			 <xsl:when test="name(./*)='emph'">
+                 <u><xsl:value-of select="."/> </u>
+			 </xsl:when>
+			 <xsl:otherwise>
+				<xsl:value-of select="."/> 
+			 </xsl:otherwise>
+			</xsl:choose>
+		</xsl:when>
+
+		<xsl:when test="name()='choice'">
+		   <xsl:if test="name(./*)='abbr'and not(.//tei:term)"> <!--abbreviazioni-->
+              <xsl:value-of select="concat(./tei:expan , ' ')"/>
+           </xsl:if>
+         <xsl:if test="name(./*)='sic' and not(.//tei:term)"> <!--errori-->
+                <xsl:value-of select="concat(./tei:corr , ' ')"/>
+         </xsl:if>
 		
-			</xsl:when>
+		</xsl:when>
+
+
+
+
+		
                   
 
           
