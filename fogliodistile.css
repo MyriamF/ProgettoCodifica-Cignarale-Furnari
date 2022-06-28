@@ -228,6 +228,7 @@ section .titolo{
 
 #section-4{
 	background:black;
+  overflow-y:hidden;
 }
 
 input[type=text]{
@@ -332,6 +333,7 @@ margin:0px;
 .showbutton[value="Nascondi"] + .nascondi2 {padding:4px;}
 
 
+
 #bottone{
 	width:200px;
 	height:35px;
@@ -346,12 +348,13 @@ margin:0px;
   background: black;
   text-align: justify;
   word-spacing: 1px; 
-  line-height: 40px;
+  line-height: 30px;
   font-size:20px;
   margin: 50px;
   padding: 50px;
   text-align: justify;
   word-spacing: 1px; 
-  line-height: 40px;
+  line-height: 30px;
   font-size:20px;
+  margin-top: -10px;
 }
