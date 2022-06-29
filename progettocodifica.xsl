@@ -145,18 +145,17 @@
 
 
   
-<xsl:template match="//tei:titleStmt">  <!--template titolo-->
+<xsl:template match="//tei:titleStmt">  <!--formattazione titolo-->
     
 	<xsl:value-of select="./tei:title"/>
 	<xsl:for-each select="./tei:respStmt">
 		<xsl:value-of select="concat(./tei:resp,' ')"/>
-		
 		<xsl:choose>
 			<xsl:when test="count(./tei:name)=2">
-				<xsl:value-of select="concat(./tei:name,', ',./tei:name[last()])"/>
+				<xsl:value-of select="concat(./tei:name,', ',./tei:name(2))"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="./tei:name"/>
+				<xsl:value-of select="concat(./tei:name,', ')"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:for-each>
@@ -205,8 +204,8 @@
     </xsl:attribute-set>
 
 
-	<!--Glossario pagina 3-->
-	<xsl:template match="//tei:div[@xml:id='glossary']" name="Glossario">
+	<!--Patole Chiave-->
+	<xsl:template match="//tei:div[@xml:id='glossary']" name="ParoleChiave">
 		<ul>
 			<xsl:for-each select=".//tei:item">
 				<li>
@@ -225,7 +224,6 @@
 		</xsl:attribute>
 	</xsl:attribute-set>
 
-	<!--Attributi di ogni elemento terminologico-->
 	<xsl:attribute-set name="terminiTesto">
 		<xsl:attribute name="href">
 			<xsl:value-of select="./@ref"/>
