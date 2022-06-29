@@ -64,7 +64,7 @@
 				<div class="nascondi">
 					<div>
 					<h3>TRADUZIONE</h3>
-					<div style="overflow-y: scroll; width:1000px; height:150px">
+					<div style="overflow-y: scroll; width:1000px; height:160px">
 					<p class="frasi" id="line"> 
 						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg19']" mode="traduzione"/>
 					</p>
