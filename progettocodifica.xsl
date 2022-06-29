@@ -56,7 +56,7 @@
 		    
 		  <div class="storia" id="storia3">
 		  <p class="frasi" id="line">
-			<xsl:apply-templates select="//tei:fw[@xml:id='numero_pg19']"/>
+			 <xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']/tei:fw"/>
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']" mode="testo"/>
  			</p>
 
@@ -93,7 +93,8 @@
 		
 			<div class="storia" id="storia3">
 				<p class="frasi" id="line">
-				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']"/>
+				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']/tei:fw"/>
+				<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg20']" mode="testo"/>
 				</p>
 
 				<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
@@ -102,7 +103,7 @@
 					<h3>TRADUZIONE</h3>
 					<div style="overflow-y: scroll; width:950px; height:100px">
 					<p class="frasi" id="line"> 
-						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
+				    	<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
 					</p>
 					</div>
 			    </div>
@@ -162,13 +163,6 @@
 
 </xsl:template>
   
-<xsl:template match="//tei:fw[@xml:id='numero_pg19']">	<!--Numero pagina 19-->
-	<xsl:value-of select="."/>
-</xsl:template>
-
-<xsl:template match="//tei:fw[@xml:id='numero_pg20']">	<!--Numero pagina 19-->
-	<xsl:value-of select="."/>
-</xsl:template>
 
 
 <xsl:template match="//tei:surface[@xml:id='facspage19']"> <!--Immagine pagina 19-->
@@ -238,20 +232,29 @@
 		</xsl:attribute>
 	</xsl:attribute-set>
 
-
+   <xsl:template match="tei:div[@xml:id='Testo_pg19']/tei:fw"> <!--Numero pagina 19-->
+        <xsl:value-of select="."/>
+    </xsl:template>
+	
+	<xsl:template match="tei:div[@xml:id='Testo_pg20']/tei:fw">		<!--Numero pagina 19-->
+		<xsl:value-of select="."/>
+	</xsl:template>
+	
+	
+	
 	<!-- formattazione testo -->
 
-<xsl:template match="//tei:div[@xml:id='Testo_pg19']" name="templateTesto" mode="testo">
-      <xsl:for-each select="./tei:ab//node()">
+<xsl:template match="//tei:div[@xml:id='Testo_pg19']" name="formattazioneTesto" mode="testo">
+ 
+	  <xsl:for-each select="./tei:ab//node()">
 	     <xsl:choose>
-           <xsl:when test="name()='lb'"> <!--line beginning-->
+		 
+           <xsl:when test="name()='lb'"> <!--a capo-->
               <br/>
            </xsl:when> 
 
-	       <xsl:when test="name()='unclear'"> <!--testo sbiadito-->
-		     
+	       <xsl:when test="name()='unclear'"> <!--testo sbiadito o poco leggibile-->
 			 <xsl:value-of select="concat(. , ' ')"/> 
-		   
            </xsl:when>
 
 		    <xsl:when test="name()='seg'"> <!--testo semplice-->
@@ -263,84 +266,79 @@
             </xsl:when>
 			
 
-		<xsl:when test="name()='term'">
+		<xsl:when test="name()='term'"> <!-- elementi terminologici -->
 			<xsl:if test="name(..)='ab' and not(.//tei:unclear) and not(name(./*)='emph')">
-                  <xsl:value-of select="concat(. , ' ')"/>
+            <span > <xsl:value-of select="concat(. , ' ')"/></span>
 		    </xsl:if>
-		
            <xsl:choose>
-			 <xsl:when test="name(./*)='emph'">
+			 <xsl:when test="name(./*)='emph'"> <!-- elementi terminologici sottolineati -->
                  <u><xsl:value-of select="concat(. , ' ')"/></u>
-			 </xsl:when>
+		</xsl:when>
 			</xsl:choose>
+		</xsl:when>
 
-			</xsl:when>
-
-		 <xsl:when test="name()='add'"> <!--aggiunte-->
-		 <xsl:choose>
-		 <xsl:when test="name(./*)='unclear'">
-                          
-			</xsl:when>   
+		<xsl:when test="name()='add'"> <!--aggiunte-->
+		   <xsl:choose>
+		      <xsl:when test="name(./*)='unclear'"> 
+			  <!-- non aggiunge testo perché già gestito dalla funzione 'unclear' -->             
+		 </xsl:when>   	
+	    <xsl:when test="name(./*)='choice'"> <!-- tag choice figlio di add -->
+                <xsl:value-of select="concat(./tei:corr , ' ')"/>
+         </xsl:when>
             <xsl:otherwise>
 				<xsl:value-of select="concat(. , ' ')"/>
-
 			</xsl:otherwise>
             </xsl:choose>
+         </xsl:when> 
 
-            </xsl:when>
-
-		<xsl:when test="name()='choice'">
+		<xsl:when test="name()='choice'"> <!--gestione abbreviazioni ed errori di scrittura -->
 		   <xsl:if test="name(./*)='abbr'and not(.//tei:term)"> <!--abbreviazioni-->
               <xsl:value-of select="concat(./tei:expan , ' ')"/>
            </xsl:if>
          <xsl:if test="name(./*)='sic' and not(.//tei:term)"> <!--errori-->
                 <xsl:value-of select="concat(./tei:corr , ' ')"/>
-         </xsl:if>
+		</xsl:if>
 	  </xsl:when>
 
+	  <xsl:when test="name()='del'">
+		<xsl:choose>
+		<xsl:when test="name(./*)='gap' ">
+			<del> unreadable </del>
+		</xsl:when>
+		<xsl:otherwise>
+		   <del><xsl:value-of select="concat(. , ' ')"/></del>
+	    </xsl:otherwise>
+	   </xsl:choose>
+	  </xsl:when>
 
+	  <xsl:when test="name()='phr'">		<!--a capo-->
+	  <del>
+			<xsl:value-of select="concat(. , ' ')"/>
+		</del>
+	</xsl:when> 
 
-
-
-
-		
-                  
-<!--Ricordarsi tag SUPPLIED 
-	DEL SPAN-->
-          
-
-		
-
-
-			<xsl:when test="name()='pc'"> <!--termini-->
-		      <xsl:value-of select="concat(. , ' ')"/>
-            </xsl:when>
-
-			<xsl:when test="name()='w'"> <!--termini-->
-                 <xsl:value-of select="concat(. , ' ')"/> 
-            </xsl:when>
-
-			<xsl:when test="name()='add'"> <!--termini-->
-                 <xsl:value-of select="concat(. , ' ')"/> 
-            </xsl:when>
-
-
-
-
-
-                                    
-                               
-                            
-
-						
-						
-                        
+	<xsl:when test="name()='pc'"> <!--termini-->
+	<xsl:choose>
+		<xsl:when test="name(..)='add' or name(../..)='choice'">
+		</xsl:when>
+		<xsl:otherwise>
+		<xsl:value-of select="concat(.,' ')"/>
+		</xsl:otherwise>
 		</xsl:choose>
-    
+	</xsl:when>
+
+	<xsl:when test="name()='w'"> <!--termini-->
+			<xsl:value-of select="concat(. , ' ')"/> 
+	</xsl:when>				                    
+		</xsl:choose>
   </xsl:for-each>
-
-
 </xsl:template>
+
+
+<xsl:template match="//tei:div[@xml:id='Testo_pg20']" mode="testo">
+	<xsl:call-template name="formattazioneTesto"/> 
+</xsl:template>
+
 
 
     <xsl:attribute-set name="aCapo">
@@ -351,6 +349,11 @@
 	 
 
 
-
+<xsl:attribute-set name="TermineSottolineatoAggiunto">
+<xsl:attribute name="class">termSottoAdd</xsl:attribute>
+<xsl:attribute name="href">
+	<xsl:value-of select="./@place"/>
+</xsl:attribute>
+</xsl:attribute-set>
 
 </xsl:stylesheet>

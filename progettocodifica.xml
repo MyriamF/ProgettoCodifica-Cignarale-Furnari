@@ -85,13 +85,13 @@
     
      <body>
       
-   
+ 
     <div type="pg19" xml:id="Testo_pg19">  <!-- inizio pagina 19 --> 
           <fw n="19" type="pageNum" place="top_left" facs="#numero_pg19">19</fw>  
-
+        
               <ab n="1" type="first_section" xml:id="Par1_pg19">
                 <lb facs="#R1_pg19"/>
-                  <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"> </gap></del>
+                  <del rend="unreadable" hand="author"><gap reason="cancelled" extent="chars"></gap></del>
                   <seg>Serrons maintenant d'un peu plus</seg> 
                   
                 <lb facs= "#R2_pg19"/>
@@ -107,10 +107,10 @@
                   <unclear reason="faded">vue de </unclear>
                   <term ref= "#historie">Histoire appliquée à la langue</term> 
                   <pc force="strong">.</pc>
-                  <seg>Presque im <pc force="inter">-</pc></seg>
+                  <seg>Presque im</seg><pc force="inter">-</pc>
                     
                 <lb facs= "#R4_pg19" break="no" rend="double stroke"/>
-                  <seg><pc force="inter">=</pc>médiatement se présentera la nécessité de</seg>
+                 <pc force="inter">=</pc> <seg>médiatement se présentera la nécessité de</seg>
                   <unclear reason= "faded">classer</unclear>
                         
                 <lb facs= "#R5_pg19"/>
@@ -167,18 +167,18 @@
                     <w>points</w>
                     <choice><abbr type="brevigraph">±</abbr><expan> plus ou moins</expan></choice>
                     <unclear reason="faded">distants de son </unclear>
-                    <seg>territoire <pc force= "weak">,</pc>elle </seg>
+                    <w>territoire</w><pc force= "weak">,</pc><w>elle</w>
                     
                   <lb facs= "#R10_pg19"/>
                     <seg>n'est pas non</seg>
                     <choice><abbr type="brevigraph">+</abbr><expan> plus</expan></choice>
                     <choice><abbr type="abbreviation">identiq<am>.</am></abbr><expan>identiqu<ex>ue</ex></expan></choice>
                     <seg> à elle</seg> <pc force= "weak">-</pc>       
-                    <choice><abbr type= "brevigraph">m^</abbr><expan>même</expan></choice>
+                    <choice><abbr type= "brevigraph">m^</abbr><expan>même</expan></choice><pc force="strong">.</pc>
                     <seg> Les deux choses</seg>
                     <supplied reason= "omitted_in_original" resp= "editor"><pc force = "weak">,</pc></supplied>
                     <subst>
-                    <del rend="overstrike" hand="author">pour<gap reason="cancelled" quantity="1" extent="word"></gap></del>
+                    <del rend="overstrike" hand="author">pour</del>
                    
                     
                   <lb facs= "#R11_pg19"/>
@@ -187,11 +187,11 @@
                     </subst>
                     <seg>avoir une vue exacte</seg>
                     <unclear reason="faded">des événements</unclear>
-                    <supplied reason="omitted_in_original" resp= "editor"> <pc force = "weak">,</pc></supplied>
-                    <del rend="overstrike" hand="author">ne pouvent jamais<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
+                    <supplied reason="omitted_in_original" resp= "editor"><pc force = "weak">,</pc></supplied>
+                    <del rend="overstrike" hand="author">ne pouvent jamais</del>
                            
                   <lb facs= "#R12_pg19"/>
-                    <del rend="overstrike" hand="author">être sèparés<pc force="weak">,</pc> mais<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
+                    <del rend="overstrike" hand="author">être sèparés<pc force="weak">,</pc> mais</del>
                     <seg>doivent toujours être considé </seg><pc force= "inter">=</pc>
                   <lb facs= "#R13_pg19"  break="no" rend="double stroke"/>/>
                     <pc force= "weak">=</pc><seg>rées à la fois</seg>
@@ -199,7 +199,7 @@
                      <seg>de front</seg><pc force="strong">.</pc>
                     <seg>Mais nous sommes </seg>
                     <add place= "supralinear"><unclear reason= "faded">bien</unclear></add>
-                   <sic>ob<pc force="inter">=</pc></sic>
+                   <w>ob</w><pc force="inter">=</pc>
                               
                   <lb facs= "#R14_pg19" break="no" rend="double stroke"/>
                    <pc force= "weak">=</pc><seg>ligés de les séparer</seg>
@@ -214,12 +214,13 @@
                   <lb facs= "#R15_pg19"/>
                   <seg>Je considérerai donc</seg>
                   <unclear reason="eccentric_ductus">uniquement</unclear>
-                  <del rend="overstrike" hand="author">auj<gap reason="cancelled" quantity="2" extent="chars"></gap></del>
+                  <del rend="overstrike" hand="author">auj</del>
                   <seg>pour <date when="10-11-1891">aujourd'hui</date></seg>
                                      
                   <lb facs= "#R16_pg19"/>
                     <seg>la marche</seg>
-                    <del rend="overstrike" hand="author">du langage<gap reason="cancelled" quantity="3" extent="words"></gap></del>
+                    <del rend="unreadable" hand="author"><gap reason="cancelled" quantity="2" extent="words"></gap> </del>
+                    <del rend="overstrike" hand="author">du langage</del>
                     <subst>
                      <add place= "supralinear">de la <term ref="#lague">langue</term> </add>
                     </subst>
@@ -246,22 +247,25 @@
               <ab n="5" type="fifth_section" xml:id="Par5_pg19">
                   <lb facs= "#R20_pg19"/>
                    <seg>Même il ne me sera possible</seg>
-                   <del rend="overstrike" hand="author"> de po<gap reason="cancelled" quantity="4" extent="chars"> </gap></del>
+                   <del rend="overstrike" hand="author">de po</del>
                    <seg>d'aborder</seg>
                                           
                   <lb facs= "#R21_pg19"/>
                    <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
-                    <seg>dans cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
+                    <seg>cette <date when="10-11-1891">séance</date> que le premier point principal à</seg>
                                   
                   <lb facs= "#R22_pg19"/>  
-                    <seg>poser<pc force="strong">;</pc></seg>
-                    <delSpan rend="overstrike" spanTo="#deletedSection_pg19"/>
-                    <phr facs="#delSection_pg19">
-                    Nous étudierons dans notre prochain séance le fait de la transformation le fait que nous etudions
-                    </phr>
-                             
-                  <lb facs= "#R25_pg19"/>
-                   <anchor xml:id="deletedSection_pg19"/>  
+                    <seg>poser</seg><pc force="strong">;</pc>
+                    <delSpan rend="overstrike" spanTo="#riga25"/>
+                    <del> Nous étudierons dans notre prochain séance </del>
+                   <lb facs= "#R23_pg19"/>
+                   <del> le fait de la transformation. Le point que nous</del>
+                    <lb facs= "#R24_pg19"/>
+                    <del> étudions auj est le point fai de la continuité </del>
+                   
+                     
+                  <lb facs="#R25_pg19"/><anchor xml:id="riga25"/>
+                    <del>et que</del>
                    <add hand="author" place="supralinear">c<pc force="inter">'</pc></add>
                    <seg>est le <term ref="#principe">principe</term> de la</seg>
                    <term ref="#continuite" ><emph><hi rend="underline">continuité</hi></emph></term> 
@@ -271,7 +275,7 @@
                                                 
                   <lb facs= "#R26_pg19"/>    
                     <seg>dans notre</seg>
-                    <del rend="overstrike" hand="author">prochain<gap reason="cancelled" quantity="1" extent="word"> </gap></del>
+                    <del rend="overstrike" hand="author">prochain</del>
                     <date when="13-10-1891"><w> séance</w>
                     <add hand="author" place="supralinear">de mardi</add></date>
                     <seg>nous aurons à examiner </seg>
@@ -282,9 +286,9 @@
                     <choice><sic>contre<pc force= "inter">-</pc>partie</sic><corr>contrepartie</corr></choice>
                     <pc force="weak">,</pc>
                     <unclear reason="faded">celui de la</unclear>
-                    <term ref="#transformation"><emph><hi rend="underline"><choice><abbr type="abbreviation">trans</abbr></choice> 
-                    <add place="underlinear" hand="author"><abbr>formt</abbr><expan>transform<ex>a</ex>t<ex>ion</ex></expan></add></hi></emph></term>
-                    <unclear reason="illegible">dans le <term rend="tempsEspace">temps</term><pc force="strong">.</pc></unclear>
+                   <choice><abbr type="abbreviation">trans</abbr></choice>
+                    <add place="underlinear" hand="author"><choice><sic>formt</sic><corr>transformation</corr></choice><term ref="#transformation"><emph><hi rend="underline"></hi></emph></term></add>
+                    <unclear reason="illegible">dans le <term rend="tempsEspace">temps</term></unclear><pc force="strong">.</pc>
             </ab> 
      </div>      
  
@@ -295,8 +299,8 @@
             
               <ab n="1" type="first_section" xml:id="Par1_pg20">
                 <lb facs="#R1_pg20"/>
-                  <seg>Puis<pc force="weak">,</pc> de même<pc force="weak">,</pc>nous considérerons </seg>
-                  <del rend="overstrike" hand="author">le<gap reason="cancelled" quantity="1" extent="word"></gap></del>
+                  <w>Puis</w><pc force="weak">,</pc> <seg>de même</seg><pc force="weak">,</pc><seg>nous considérerons </seg>
+                  <del rend="overstrike" hand="author">le</del>
                   <add hand="author" place="supralinear"><unclear reason="eccentric ductus">ce qu'on peut dire du </unclear></add>
                   <term ref="#principe">principe</term>
                                                     
@@ -309,13 +313,13 @@
                   <unclear reason= "faded">celui </unclear>
                   <choice><sic>d</sic><corr>de</corr></choice>
                   <unclear reason="faded">la</unclear>
-                  <del rend="overstrike" hand="author">trans<pc force="inter">-</pc><gap reason="cancelled" quantity="5" extent="chars"> </gap></del>
+                  <del rend="overstrike" hand="author">trans<pc force="inter">-</pc></del>
                                                     
                 <lb facs="#R3_pg20"/>
-                  <del rend="overstike" hand="author"><pc force="inter">=</pc>formation selon l'espace<gap reason="cancelled" quantity="3" extent="words"> </gap></del>
+                  <del rend="overstike" hand="author">=formation selon l'espace</del>
                   <term ref="#divergence" ><emph><hi rend="underline">divergence</hi></emph></term> 
                   <choice><abbr type="contraction">ds</abbr><expan>d<ex>an</ex>s</expan> </choice>
-                  <seg>l'<term rend="espace">espace</term></seg>
+                  <seg>l'<term rend="espace">espace</term></seg><pc force="strong">.</pc>
               </ab>
             
               <ab n="2" type="second_section" xml:id="Par2_pg20">                                       
@@ -333,17 +337,17 @@
                <lb facs="#R6_pg20"/>
                   <seg>l'étude</seg>
                   <unclear reason="eccentric ductus">des</unclear>
-                  <seg>des <term ref="#faitpartic">faits particuliers</term><pc force="weak">,</pc>>nous aborderons</seg>
-                  <del rend="overstrike" hand="author">le<gap reason="cancelled" extent="chars"> </gap></del>
+                  <seg>des <term ref="#faitpartic">faits particuliers</term><pc force="weak">,</pc>nous aborderons</seg>
+                  <del rend="overstrike" hand="author">le</del>
                                                       
                <lb facs= "#R7_pg20"/>
-                  <add place= "left">avec
+                  <add place= "left">avec</add>
                     <choice><abbr type="brevigraph">+</abbr><expan>plus</expan></choice>
                     <w>de</w>
-                   <unclear reason="eccentric ductus"> sûreté</unclear></add>
+                   <unclear reason="eccentric ductus"> sûreté</unclear>
                   <w> sujet</w>
                   <unclear reason="faded">spécial de la </unclear>
-                  <term ref="#phonetique"><choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></choice></term>
+                 <choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></choice><term ref="#phonetique"></term>
                   <seg> du grec <unclear reason= "eccentric ductus">et</unclear>du latin</seg>
                                                      
               <lb facs= "#R8_pg20"/>
@@ -353,8 +357,8 @@
                                                      
                 <lb facs= "#R9_pg20"/>
                   <seg>se présentent</seg>
-                   <del rend="overstrike" hand="author">en foul<gap reason="cancelled" quantity="2" extent="word"> </gap></del>
-                   <seg>sans cesse <pc force="strong">.</pc></seg>
+                   <del rend="overstrike" hand="author">en foul</del>
+                   <seg>sans cesse</seg><pc force="strong">.</pc>
              </ab>
             </div>
              
@@ -516,7 +520,8 @@
                 <zone ulx="679" uly="2667" lrx="2699" lry="2745" xml:id="R20_pg19"/>
                 <zone ulx="437" uly="2771" lrx="2583" lry="2855" xml:id="R21_pg19"/>
                 <zone ulx="447" uly="2911" lrx="771" lry="3019" xml:id="R22_pg19"/>
-                <zone ulx="809" uly="2913" lrx="2695" lry="3243" xml:id="delSection_pg19"/>
+                <zone ulx="413" uly="3027" lrx="2645" lry="3091" xml:id="R23_pg19"/>
+                <zone ulx="443" uly="3168" lrx="2584" lry="3227" xml:id="R24_pg19"/>
                 <zone ulx="463" uly="3275" lrx="2731" lry="3373" xml:id="R25_pg19"/>
                 <zone ulx="489" uly="3415" lrx="2745" lry="3483" xml:id="R26_pg19" />
                 <zone ulx="501" uly="3519" lrx="2751" lry="3625" xml:id="R27_pg19" />
