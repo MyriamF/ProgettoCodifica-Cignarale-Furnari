@@ -232,7 +232,7 @@ section .titolo{
 
 #section-5{
 	background:black;
-  
+  overflow-y: hidden;
 }
 
 input[type=text]{
