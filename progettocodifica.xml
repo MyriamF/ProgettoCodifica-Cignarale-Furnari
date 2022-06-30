@@ -287,12 +287,22 @@
                     <pc force="weak">,</pc>
                     <unclear reason="faded">celui de la</unclear>
                    <choice><abbr type="abbreviation">trans</abbr></choice>
-                    <add place="underlinear" hand="author"><choice><sic>formt</sic><corr><term ref="#transformation"><emph><hi rend="underline">transformation</hi></emph></term></corr></choice></add>
+                    <add place="underlinear" hand="author"><choice><sic>formt</sic><corr><term ref="#transformation" xml:id="n1"><emph><hi rend="underline">transformation</hi></emph></term></corr></choice></add>
                     <unclear reason="illegible">dans le <term rend="tempsEspace">temps</term></unclear><pc force="strong">.</pc>
             </ab> 
      </div>      
  
-
+       <div xml:id="note_pg19">
+                <list type="notes">
+                    <item>
+                        <note resp="#EF" xml:id="nota1">
+                            Come si è già detto (cfr. supra § 2.5.), si tratta della materia poi confluita nel
+                            capitolo del CLG su Mutabilità e immutabilità del segno, già citato più volte, e che presenta
+                            fortissime consonanze con queste pagine.
+                        </note>
+                    </item>
+                </list>
+        </div>
 
         <div type="pg20" xml:id="Testo_pg20">                    
             <fw n="20" type="pageNum" place="top_left" facs="#numero_pg20">20</fw> 

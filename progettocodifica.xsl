@@ -23,8 +23,8 @@
 				<li class="active"><a href="#first">Introduzione</a></li>
 				<li><a href="#section-2">Pagina 19</a></li>
 				<li><a href="#section-3">Pagina 20</a></li>
-				<li><a href="#section-4">Informazioni</a></li>
-				<li><a href="#section-5">Note</a></li>
+				<li><a href="#section-4">Note</a></li>
+				<li><a href="#section-5">Informazioni</a></li>
 			</ul>
 			</nav>
 		</header>
@@ -121,13 +121,10 @@
 
 	<section id="section-4">
       <div class="titolo">
-      <h2>Parole Chiave</h2>
-	  <div class ="glossario">
-	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
-	 <br/>
-	 <br/>
-	 <xsl:apply-templates select="//tei:fileDesc"/>
-   </div>
+		 <h2>Note</h2>
+	  <div class="note19">
+		 <xsl:apply-templates  select="//tei:div[@xml:id='note_pg19']" mode="templateNote"/>
+	  </div>
 </div>
 
 	  
@@ -141,7 +138,13 @@
 
 <section id="section-5">
 	<div class="titolo">
-	  <h2>Note</h2>
+	<h2>Parole Chiave</h2>
+	  <div class ="glossario">
+	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
+	 <br/>
+	 
+	 <xsl:apply-templates select="//tei:fileDesc"/>
+   </div>
 	</div>
 </section>
 
@@ -235,7 +238,7 @@
 		<ul>
 			<xsl:for-each select=".//tei:item">
 				<li>
-					<xsl:element name="term" use-attribute-sets="terminiLista">
+					<xsl:element name="term" use-attribute-sets="paroleChiave">
 						<xsl:value-of select="./tei:term"/>
 					</xsl:element>:
 					<xsl:value-of select="./tei:gloss"/>
@@ -244,13 +247,18 @@
 		</ul>
 	</xsl:template>
 
-	<xsl:attribute-set name="terminiLista">
+	<xsl:attribute-set name="paroleChiave">
 		<xsl:attribute name="id">
 			<xsl:value-of select="./tei:term/@xml:id"/>
 		</xsl:attribute>
 	</xsl:attribute-set>
 
-	<!--Attributi di ogni elemento terminologico-->
+	<xsl:attribute-set name="noteP">
+        <xsl:attribute name="id"><xsl:value-of select="./tei:note/@xml:id"/></xsl:attribute>
+        <xsl:attribute name="class">note</xsl:attribute>
+    </xsl:attribute-set>
+
+
 	<xsl:attribute-set name="terminiTesto">
 		<xsl:attribute name="href">
 			<xsl:value-of select="./@ref"/>
@@ -300,12 +308,18 @@
                  <u><xsl:value-of select="concat(. , ' ')"/></u>
 		     </xsl:when>
 			 <xsl:when test="name(..)='corr' and not(.//tei:add)">
-			    <u><xsl:value-of select="concat(. , ' ')"/></u>
+			  <u><xsl:element name="a" use-attribute-sets="terminiTesto">
+			    <xsl:value-of select="concat(. , ' ')"/>
+				</xsl:element></u>
 			</xsl:when>
 			 <xsl:when test="name(..)='expan' and not(.//tei:add)">
-			    <u><xsl:value-of select="concat(. , ' ')"/></u>
+			    <u><xsl:value-of select="concat(. , ' ')"/></u>     
 			</xsl:when>
 		   </xsl:choose>
+
+		   <xsl:if test="./@xml:id='n1'">
+                <a class="noteP" href="#section-4">N1</a> 
+           </xsl:if>
 		</xsl:when>
 
 		<xsl:when test="name()='add'"> <!--aggiunte-->
@@ -370,7 +384,16 @@
 	<xsl:call-template name="formattazioneTesto"/> 
 </xsl:template>
 
-
+    <xsl:template match="//tei:div[@xml:id='note_pg19']" name="templateNote">
+        <ul>
+            <xsl:for-each select=".//tei:item">
+                <li>
+                    <xsl:element name="note" use-attribute-sets="noteP"><xsl:value-of select="./tei:note/@xml:id"/></xsl:element>: 
+                    <xsl:value-of select="./tei:note"/>
+                </li>
+            </xsl:for-each>
+        </ul>
+    </xsl:template>
 
     <xsl:attribute-set name="aCapo">
         <xsl:attribute name="id"><xsl:value-of select="./@facs"/></xsl:attribute>
