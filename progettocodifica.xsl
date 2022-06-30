@@ -30,13 +30,12 @@
         
 		<section id="first">
 		<div class="inner">
-			<h1><xsl:value-of select="//tei:titleStmt/tei:title"></xsl:value-of></h1>
-			<h3><xsl:value-of select="//tei:respStmt"></xsl:value-of></h3>
-			
+			<xsl:apply-templates select="//tei:titleStmt"/>
+	
 			<br/>
 			<br/>
 			<br/>
-
+    
 			<p class="frasi" id="intro"><xsl:value-of select="//tei:msContents/tei:summary"></xsl:value-of></p>
         </div>
 		</section>
@@ -126,11 +125,7 @@
 	 <xsl:apply-templates select="//tei:div[@xml:id='glossary']"/>
 	 <br/>
 	 <br/>
-	 <xsl:apply-templates select="//tei:respStmt[@xml:id='MF']"/>
-    <br/>
-    <br/>
-    <xsl:apply-templates select="//tei:respStmt[@xml:id='EF']"/>
-
+	 <xsl:apply-templates select="//tei:fileDesc"/>
    </div>
 </div>
 
@@ -145,21 +140,36 @@
 
 
   
-<xsl:template match="//tei:titleStmt">  <!--template titolo-->
-    
-	<xsl:value-of select="./tei:title"/>
-	<xsl:for-each select="./tei:respStmt">
+<xsl:template match="//tei:titleStmt">  <!-- titolo e informazioni di codifia-->
+    <h1><xsl:value-of select="./tei:title"/></h1>
+	<br/>
+	<h3>
+	<xsl:for-each select="./tei:respStmt"><br/>
 		<xsl:value-of select="concat(./tei:resp,' ')"/>
-		
 		<xsl:choose>
 			<xsl:when test="count(./tei:name)=2">
-				<xsl:value-of select="concat(./tei:name,', ',./tei:name[last()])"/>
+				<xsl:value-of select="concat(./tei:name,', ',./tei:name[2])"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:value-of select="./tei:name"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:for-each>
+    </h3>
+   <br/>
+</xsl:template>
+
+<xsl:template match="//tei:fileDesc">
+
+        EDIZIONE DIGITALE <br/> 
+		<xsl:for-each select="./tei:publicationStmt/node()">
+			<xsl:value-of select="."/><br/>
+		</xsl:for-each>
+		<br/> 
+		MANOSCRITTO ORIGINALE <br/> 
+		<xsl:for-each select="./tei:sourceDesc/tei:listBibl/tei:msDesc/tei:msIdentifier/node()">
+		    <xsl:value-of select="."/><br/>
+		</xsl:for-each>
 
 </xsl:template>
   
@@ -205,7 +215,7 @@
     </xsl:attribute-set>
 
 
-	<!--Glossario pagina 3-->
+	<!--Glossario -->
 	<xsl:template match="//tei:div[@xml:id='glossary']" name="Glossario">
 		<ul>
 			<xsl:for-each select=".//tei:item">

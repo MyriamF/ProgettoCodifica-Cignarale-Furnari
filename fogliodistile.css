@@ -228,7 +228,7 @@ section .titolo{
 
 #section-4{
 	background:black;
-  overflow-y:hidden;
+  overflow-y:scroll;
 }
 
 input[type=text]{
