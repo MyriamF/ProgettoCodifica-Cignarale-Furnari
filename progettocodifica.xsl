@@ -298,8 +298,14 @@
            <xsl:choose>
 			 <xsl:when test="name(./*)='emph'"> <!-- elementi terminologici sottolineati -->
                  <u><xsl:value-of select="concat(. , ' ')"/></u>
-		</xsl:when>
-			</xsl:choose>
+		     </xsl:when>
+			 <xsl:when test="name(..)='corr' and not(.//tei:add)">
+			    <u><xsl:value-of select="concat(. , ' ')"/></u>
+			</xsl:when>
+			 <xsl:when test="name(..)='expan' and not(.//tei:add)">
+			    <u><xsl:value-of select="concat(. , ' ')"/></u>
+			</xsl:when>
+		   </xsl:choose>
 		</xsl:when>
 
 		<xsl:when test="name()='add'"> <!--aggiunte-->

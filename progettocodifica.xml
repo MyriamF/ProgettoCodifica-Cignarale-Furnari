@@ -347,7 +347,7 @@
                    <unclear reason="eccentric ductus"> sûreté</unclear>
                   <w> sujet</w>
                   <unclear reason="faded">spécial de la </unclear>
-                 <choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan>phonétiq<ex>ue</ex></expan></choice><term ref="#phonetique"></term>
+                 <choice><abbr type="abbreviation">phonétiq<am>.</am></abbr><expan><term ref="#phonetique">phonétiq<ex>ue</ex></term></expan></choice>
                   <seg> du grec <unclear reason= "eccentric ductus">et</unclear>du latin</seg>
                                                      
               <lb facs= "#R8_pg20"/>
