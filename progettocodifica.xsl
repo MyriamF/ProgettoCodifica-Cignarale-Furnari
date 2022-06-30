@@ -60,7 +60,7 @@
 			<xsl:apply-templates select="//tei:div[@xml:id='Testo_pg19']" mode="testo"/>
  			</p>
 
-		  	<input class="showbutton" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
+		  	<input class="showbutton" style="margin-left: -50px" type="button" value="Mostra" onclick="this.value=this.value=='Mostra'?'Nascondi':'Mostra';"/>
 				<div class="nascondi">
 					<div>
 					<h3>TRADUZIONE</h3>
@@ -145,17 +145,18 @@
 
 
   
-<xsl:template match="//tei:titleStmt">  <!--formattazione titolo-->
+<xsl:template match="//tei:titleStmt">  <!--template titolo-->
     
 	<xsl:value-of select="./tei:title"/>
 	<xsl:for-each select="./tei:respStmt">
 		<xsl:value-of select="concat(./tei:resp,' ')"/>
+		
 		<xsl:choose>
 			<xsl:when test="count(./tei:name)=2">
-				<xsl:value-of select="concat(./tei:name,', ',./tei:name(2))"/>
+				<xsl:value-of select="concat(./tei:name,', ',./tei:name[last()])"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="concat(./tei:name,', ')"/>
+				<xsl:value-of select="./tei:name"/>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:for-each>
@@ -204,8 +205,8 @@
     </xsl:attribute-set>
 
 
-	<!--Patole Chiave-->
-	<xsl:template match="//tei:div[@xml:id='glossary']" name="ParoleChiave">
+	<!--Glossario pagina 3-->
+	<xsl:template match="//tei:div[@xml:id='glossary']" name="Glossario">
 		<ul>
 			<xsl:for-each select=".//tei:item">
 				<li>
@@ -224,6 +225,7 @@
 		</xsl:attribute>
 	</xsl:attribute-set>
 
+	<!--Attributi di ogni elemento terminologico-->
 	<xsl:attribute-set name="terminiTesto">
 		<xsl:attribute name="href">
 			<xsl:value-of select="./@ref"/>
