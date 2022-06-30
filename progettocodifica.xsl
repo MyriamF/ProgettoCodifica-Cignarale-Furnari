@@ -253,23 +253,14 @@
 		</xsl:attribute>
 	</xsl:attribute-set>
 
-	<xsl:attribute-set name="noteP">
-        <xsl:attribute name="id"><xsl:value-of select="./tei:note/@xml:id"/></xsl:attribute>
-        <xsl:attribute name="class">note</xsl:attribute>
-    </xsl:attribute-set>
 
 
-	<xsl:attribute-set name="terminiTesto">
-		<xsl:attribute name="href">
-			<xsl:value-of select="./@ref"/>
-		</xsl:attribute>
-	</xsl:attribute-set>
 
    <xsl:template match="tei:div[@xml:id='Testo_pg19']/tei:fw"> <!--Numero pagina 19-->
         <xsl:value-of select="."/>
     </xsl:template>
 	
-	<xsl:template match="tei:div[@xml:id='Testo_pg20']/tei:fw">		<!--Numero pagina 19-->
+	<xsl:template match="tei:div[@xml:id='Testo_pg20']/tei:fw">		<!--Numero pagina 20-->
 		<xsl:value-of select="."/>
 	</xsl:template>
 	
@@ -293,10 +284,6 @@
 		    <xsl:when test="name()='seg'"> <!--testo semplice-->
                  <xsl:value-of select="concat(. , ' ')"/> 
             </xsl:when>
-
-			 <xsl:when test="name()='w'"> <!--parole semplici-->
-                 <xsl:value-of select="concat(. , ' ')"/> 
-            </xsl:when>
 			
 
 		<xsl:when test="name()='term'"> <!-- elementi terminologici -->
@@ -307,12 +294,12 @@
 			 <xsl:when test="name(./*)='emph'"> <!-- elementi terminologici sottolineati -->
                  <u><xsl:value-of select="concat(. , ' ')"/></u>
 		     </xsl:when>
-			 <xsl:when test="name(..)='corr' and not(.//tei:add)">
-			  <u><xsl:element name="a" use-attribute-sets="terminiTesto">
+			 <xsl:when test="name(..)='corr' and not(.//tei:add)">  <!-- term è una correzione -->
+			  <u><xsl:element name="a" use-attribute-sets="termini">
 			    <xsl:value-of select="concat(. , ' ')"/>
 				</xsl:element></u>
 			</xsl:when>
-			 <xsl:when test="name(..)='expan' and not(.//tei:add)">
+			 <xsl:when test="name(..)='expan' and not(.//tei:add)"> <!-- term è un'abbreviazione -->
 			    <u><xsl:value-of select="concat(. , ' ')"/></u>     
 			</xsl:when>
 		   </xsl:choose>
@@ -345,7 +332,7 @@
 		</xsl:if>
 	  </xsl:when>
 
-	  <xsl:when test="name()='del'">
+	  <xsl:when test="name()='del'"> <!-- errori non leggibili -->
 		<xsl:choose>
 		<xsl:when test="name(./*)='gap' ">
 			<del> unreadable </del>
@@ -356,13 +343,7 @@
 	   </xsl:choose>
 	  </xsl:when>
 
-	  <xsl:when test="name()='phr'">		<!--a capo-->
-	  <del>
-			<xsl:value-of select="concat(. , ' ')"/>
-		</del>
-	</xsl:when> 
-
-	<xsl:when test="name()='pc'"> <!--termini-->
+	<xsl:when test="name()='pc'"> <!--punteggiatura-->
 	<xsl:choose>
 		<xsl:when test="name(..)='add' or name(../..)='choice'">
 		</xsl:when>
@@ -372,19 +353,27 @@
 		</xsl:choose>
 	</xsl:when>
 
-	<xsl:when test="name()='w'"> <!--termini-->
+	<xsl:when test="name()='w'"> <!--parole singole-->
 			<xsl:value-of select="concat(. , ' ')"/> 
-	</xsl:when>				                    
+	</xsl:when>	
+	
+	
 		</xsl:choose>
   </xsl:for-each>
 </xsl:template>
 
+	<xsl:attribute-set name="termini">
+		<xsl:attribute name="href">
+			<xsl:value-of select="./@ref"/>
+		</xsl:attribute>
+	</xsl:attribute-set>
 
-<xsl:template match="//tei:div[@xml:id='Testo_pg20']" mode="testo">
+
+<xsl:template match="//tei:div[@xml:id='Testo_pg20']" mode="testo"> <!-- formattazione testo pg 20 -->
 	<xsl:call-template name="formattazioneTesto"/> 
 </xsl:template>
 
-    <xsl:template match="//tei:div[@xml:id='note_pg19']" name="templateNote">
+    <xsl:template match="//tei:div[@xml:id='note_pg19']" name="templateNote"> <!-- formattazione note -->
         <ul>
             <xsl:for-each select=".//tei:item">
                 <li>
@@ -395,19 +384,9 @@
         </ul>
     </xsl:template>
 
-    <xsl:attribute-set name="aCapo">
-        <xsl:attribute name="id"><xsl:value-of select="./@facs"/></xsl:attribute>
+	<xsl:attribute-set name="noteP">
+        <xsl:attribute name="id"><xsl:value-of select="./tei:note/@xml:id"/></xsl:attribute>
+        <xsl:attribute name="class">note</xsl:attribute>
     </xsl:attribute-set>
-
-
-	 
-
-
-<xsl:attribute-set name="TermineSottolineatoAggiunto">
-<xsl:attribute name="class">termSottoAdd</xsl:attribute>
-<xsl:attribute name="href">
-	<xsl:value-of select="./@place"/>
-</xsl:attribute>
-</xsl:attribute-set>
 
 </xsl:stylesheet>
