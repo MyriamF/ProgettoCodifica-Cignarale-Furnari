@@ -24,6 +24,7 @@
 				<li><a href="#section-2">Pagina 19</a></li>
 				<li><a href="#section-3">Pagina 20</a></li>
 				<li><a href="#section-4">Informazioni</a></li>
+				<li><a href="#section-5">Note</a></li>
 			</ul>
 			</nav>
 		</header>
@@ -131,6 +132,20 @@
 
 	  
 </section>
+<p>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	</p>
+
+<section id="section-5">
+	<div class="titolo">
+	  <h2>Note</h2>
+	</div>
+</section>
+
+
 	
 		
 	</body>
