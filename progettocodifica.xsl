@@ -10,7 +10,7 @@
 <xsl:template match="/">
   <html>
 	<head>
-    <title><xsl:value-of select="//tei:titleStmt/tei:title"></xsl:value-of></title>
+    <title><xsl:value-of select="//tei:titleStmt/tei:title"/></title>
 	<link rel="stylesheet" type="text/css" href="fogliodistile.css"></link>
 	<script src="JS.js" type="text/JavaScript"></script>
 	<script src="variabiliJS.js" type="text/JavaScript"></script>
@@ -37,7 +37,7 @@
 			<br/>
 			<br/>
     
-			<p class="frasi" id="intro"><xsl:value-of select="//tei:msContents/tei:summary"></xsl:value-of></p>
+			<p class="frasi" id="intro"><xsl:value-of select="//tei:msContents/tei:summary"/></p>
         </div>
 		</section>
 <br/>
@@ -66,7 +66,7 @@
 					<h3>TRADUZIONE</h3>
 					<div style="overflow-y: scroll; width:1000px; height:160px">
 					<p class="frasi" id="line"> 
-						<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg19']" mode="traduzione"/>
+						<xsl:value-of select="//tei:div[@xml:id='Traduzione_pg19']"/>
 					</p>
 					</div>
 				</div>
@@ -103,7 +103,7 @@
 					<h3>TRADUZIONE</h3>
 					<div style="overflow-y: scroll; width:950px; height:100px">
 					<p class="frasi" id="line"> 
-				    	<xsl:apply-templates select="//tei:div[@xml:id='Traduzione_pg20']" mode="traduzione"/>
+				    	<xsl:value-of select="//tei:div[@xml:id='Traduzione_pg20']"/>
 					</p>
 					</div>
 			    </div>
@@ -332,7 +332,7 @@
 		</xsl:if>
 	  </xsl:when>
 
-	  <xsl:when test="name()='del'"> <!-- errori non leggibili -->
+	  <xsl:when test="name()='del'"> <!-- parole cancellate -->
 		<xsl:choose>
 		<xsl:when test="name(./*)='gap' ">
 			<del> unreadable </del>
